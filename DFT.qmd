@@ -1,0 +1,33 @@
+# Teoría de los funcionales de la densidad (DFT)
+
+## Análisis de cargas
+
+```{python}
+from ase.build import molecule
+from ase.io import write
+from ase.units import Bohr
+from gpaw import GPAW
+from gpaw.analyse.hirshfeld import HirshfeldPartitioning
+```
+
+```{python}
+atoms = molecule('H2O')
+atoms.center(vacuum=3.5)
+atoms.calc = GPAW(h=0.17, txt='h2o.txt')
+atoms.get_potential_energy()
+atoms.get_chemical_symbols()
+```
+
+```{python}
+# Cargas de Hirshfeld 
+hf = HirshfeldPartitioning(atoms.calc)
+for atom, charge in zip(atoms, hf.get_charges()):
+    atom.charge = charge
+    print (charge)
+
+atoms.copy().write('Hirshfeld.traj')
+
+# Crear Densidad electrónica y escribir
+rho = atoms.calc.get_all_electron_density(gridrefinement=4)
+write('density.cube', atoms, data=rho * Bohr**3)
+```
