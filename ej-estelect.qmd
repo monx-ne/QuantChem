@@ -1,0 +1,5 @@
+# Método de Hartree-Fock
+
+Las ecuaciones de Hartree-Fock son ecuaciones no lineares que pueden ser resueltas con los métodos numéricos apropiados. Sin embargo, en 1951, C.C.J. Roothan demostró que utilizando el método de LCAO, las ecuaciones de Fock se simplifican reformulándose como matrices [1][2].
+
+En este proyecto, se resolverá la ecuación de Roothan $\textbf{F}\textbf{C}=\textbf{S}\textbf{C}\pmb{\epsilon}$ para el ión de hidruro de helio ($HeH^{+}$) siguiendo el algoritmo esquematizado en la siguiente figura[3]:
