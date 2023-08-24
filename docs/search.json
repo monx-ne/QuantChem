@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Temas selectos de Química Cuántica",
     "section": "",
-    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+    "text": "Este es un sitio creado con Quarto y publicado a través de GitHub Pages. En él se encuentran conceptos y ejercicios relevantes para el estudio de la Química Cuántica.\nLa elaboración de estas notas tiene como propósito revisar conceptos selectos de Química Cuántica, así como la resolución de problemas de forma numérica o a través del uso de la librería GPAW en el lenguaje de programación Python.\nEsta recopilación y adaptación de material se realizó como una actividad de retribución a la beca de CONAHCyT recibida por la autora durante su estancia en el Programa de Maestría en Ciencias Químicas."
   },
   {
     "objectID": "intro.html",

@@ -1,5 +1,7 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+Este es un sitio creado con Quarto y publicado a través de GitHub Pages. En él se encuentran conceptos y ejercicios relevantes para el estudio de la Química Cuántica.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+La elaboración de estas notas tiene como propósito revisar conceptos selectos de Química Cuántica, así como la resolución de problemas de forma numérica o a través del uso de la librería GPAW en el lenguaje de programación Python.
+
+Esta recopilación y adaptación de material se realizó como una actividad de retribución a la beca de CONAHCyT recibida por la autora durante su estancia en el Programa de Maestría en Ciencias Químicas. 
