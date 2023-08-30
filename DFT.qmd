@@ -2,32 +2,15 @@
 
 ## Análisis de cargas
 
-```{python}
-from ase.build import molecule
-from ase.io import write
-from ase.units import Bohr
-from gpaw import GPAW
-from gpaw.analyse.hirshfeld import HirshfeldPartitioning
-```
+notebook-view:
+  - notebook: QuantChem_DFT-AnCarg.ipynb
+    title: "Análisis de carga"
+    url: https://colab.research.google.com/drive/1-z-jSt-XKtAPTwUHWgcmdKWHyCoMr_lF#scrollTo=6IrNZrS3JYZq
 
-```{python}
-atoms = molecule('H2O')
-atoms.center(vacuum=3.5)
-atoms.calc = GPAW(h=0.17, txt='h2o.txt')
-atoms.get_potential_energy()
-atoms.get_chemical_symbols()
-```
+## Orbitales moleculares
 
-```{python}
-# Cargas de Hirshfeld 
-hf = HirshfeldPartitioning(atoms.calc)
-for atom, charge in zip(atoms, hf.get_charges()):
-    atom.charge = charge
-    print (charge)
 
-atoms.copy().write('Hirshfeld.traj')
+## Estructura de bandas
 
-# Crear Densidad electrónica y escribir
-rho = atoms.calc.get_all_electron_density(gridrefinement=4)
-write('density.cube', atoms, data=rho * Bohr**3)
-```
+
+## Análisis de hibridación de orbitales
