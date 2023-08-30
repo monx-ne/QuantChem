@@ -1,4 +1,4 @@
-# Preface {.unnumbered}
+# Prefacio {.unnumbered}
 
 Este es un sitio creado con Quarto y publicado a través de GitHub Pages. En él se encuentran conceptos y ejercicios relevantes para el estudio de la Química Cuántica.
 

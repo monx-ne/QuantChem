@@ -4,10 +4,13 @@ Las ecuaciones de Hartree-Fock son ecuaciones no lineares que pueden ser resuelt
 
 En este ejemplo, se resolverá la ecuación de Roothan $\textbf{F}\textbf{C}=\textbf{S}\textbf{C}\pmb{\epsilon}$ para el ión de hidruro de helio ($HeH^{+}$) siguiendo el algoritmo esquematizado en la siguiente figura[3]:
 
+![1](images/im22.png)
+
 
 ### Definir sistema de estudio y base
 
 El presente proyecto se realizó bajo el sistema de referencia:
+![1](images/im11.png)
 
 ```{python}
 import numpy as np
