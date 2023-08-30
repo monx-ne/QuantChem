@@ -1,0 +1,732 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Temas selectos de Química Cuántica},
+  pdfauthor={Montserrat Navarro Espino},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Temas selectos de Química Cuántica}
+\author{Montserrat Navarro Espino}
+\date{07/31/2023}
+
+\begin{document}
+\maketitle
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, frame hidden, sharp corners, enhanced, interior hidden]}{\end{tcolorbox}}\fi
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\bookmarksetup{startatroot}
+
+\hypertarget{prefacio}{%
+\chapter*{Prefacio}\label{prefacio}}
+\addcontentsline{toc}{chapter}{Prefacio}
+
+Este es un sitio creado con Quarto y publicado a través de GitHub Pages.
+En él se encuentran conceptos y ejercicios relevantes para el estudio de
+la Química Cuántica.
+
+La elaboración de estas notas tiene como propósito revisar conceptos
+selectos de Química Cuántica, así como la resolución de problemas de
+forma numérica o a través del uso de la librería GPAW en el lenguaje de
+programación Python.
+
+Esta recopilación y adaptación de material se realizó como una actividad
+de retribución a la beca de CONAHCyT recibida por la autora durante su
+estancia en el Programa de Maestría en Ciencias Químicas.
+
+\bookmarksetup{startatroot}
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+This is a book created from markdown and executable code.
+
+See Knuth (1984) for additional discussion of literate programming.
+
+\bookmarksetup{startatroot}
+
+\hypertarget{muxe9todo-de-hartree-fock}{%
+\chapter{Método de Hartree-Fock}\label{muxe9todo-de-hartree-fock}}
+
+Las ecuaciones de Hartree-Fock son ecuaciones no lineares que pueden ser
+resueltas con los métodos numéricos apropiados. Sin embargo, en 1951,
+C.C.J. Roothan demostró que utilizando el método de LCAO, las ecuaciones
+de Fock se simplifican reformulándose como matrices {[}1{]}{[}2{]}.
+
+En este ejemplo, se resolverá la ecuación de Roothan
+\(\textbf{F}\textbf{C}=\textbf{S}\textbf{C}\pmb{\epsilon}\) para el ión
+de hidruro de helio (\(HeH^{+}\)) siguiendo el algoritmo esquematizado
+en la siguiente figura{[}3{]}:
+
+\begin{figure}
+
+{\centering \includegraphics{./images/im22.png}
+
+}
+
+\caption{1}
+
+\end{figure}
+
+\hypertarget{definir-sistema-de-estudio-y-base}{%
+\subsection{Definir sistema de estudio y
+base}\label{definir-sistema-de-estudio-y-base}}
+
+El presente proyecto se realizó bajo el sistema de referencia:
+\includegraphics{./images/im11.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+\ImportTok{from}\NormalTok{ numpy }\ImportTok{import}\OperatorTok{*}
+\ImportTok{import}\NormalTok{ scipy}
+\ImportTok{from}\NormalTok{ numpy.linalg }\ImportTok{import}\NormalTok{ inv}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dHHe}\OperatorTok{=} \FloatTok{1.5117} \CommentTok{\#a.u.}
+\NormalTok{rR1 }\OperatorTok{=} \DecValTok{0} \CommentTok{\#Distancia del origen a núcleo H}
+\NormalTok{rR2 }\OperatorTok{=} \FloatTok{1.5117}  \CommentTok{\#Distancia del origen a núcleo He}
+
+\NormalTok{ZH}\OperatorTok{=} \DecValTok{1}
+\NormalTok{ZHe}\OperatorTok{=}\DecValTok{2}
+\NormalTok{dim }\OperatorTok{=} \DecValTok{2} \CommentTok{\#Número de átomos en molécula}
+\end{Highlighting}
+\end{Shaded}
+
+Utilizaremos como funciones base combinaciones lineares de funciones
+Gaussianas (STO-1G, específicamente). Esto facilita la evaluación de las
+integrales correspondientes y hará posible utilizar directamente las
+expresiones ya calculadas en {[}4{]}.
+
+Las funciones base propuestas son funciones Gaussianas contraídas (CGF,
+por sus siglas en inglés) y tinene la forma:
+
+\(\phi^{CGF}_{1s}= \sum^3_{p=1} d_p \phi^{GF}_{1s}(\alpha_p, \textbf{r}-\textbf{R}_A )\)
+
+donde
+\(\phi^{GF}_{1s}(\alpha_p, \textbf{r}-\textbf{R}_A ) = \left( \frac{2 \alpha}{\pi} \right)^{3/4} \mathrm{e}^{-\alpha_p|\textbf{r}-\textbf{R}_A|^2}\)
+
+Generaremos el diccionario \(BasisDat\) para recopilar los datos de los
+coeficientes de contracción (\(d_p\)) y exponenciales (\(\alpha_p\)) de
+cada átomo (\(A\)) de la molécula {[}3{]}. Este diccionario puede
+expandirse incluyendo los datos de otras bases{[}5{]}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{BasisDat}\OperatorTok{=}\NormalTok{ \{}\StringTok{\textquotesingle{}H\textquotesingle{}}\NormalTok{: \{}\StringTok{\textquotesingle{}STO{-}1G\textquotesingle{}}\NormalTok{:\{}\StringTok{\textquotesingle{}exp\textquotesingle{}}\NormalTok{:}\FloatTok{0.4166}\NormalTok{,}
+                           \StringTok{\textquotesingle{}coef\textquotesingle{}}\NormalTok{:}\FloatTok{0.3996}\NormalTok{\}\},               }
+          \StringTok{\textquotesingle{}He\textquotesingle{}}\NormalTok{: \{}\StringTok{\textquotesingle{}STO{-}1G\textquotesingle{}}\NormalTok{:\{}\StringTok{\textquotesingle{}exp\textquotesingle{}}\NormalTok{:}\FloatTok{0.7739}\NormalTok{,}
+                           \StringTok{\textquotesingle{}coef\textquotesingle{}}\NormalTok{:}\FloatTok{0.5881}\NormalTok{\}\}\}}
+
+\NormalTok{dH}\OperatorTok{=}\NormalTok{ BasisDat[}\StringTok{\textquotesingle{}H\textquotesingle{}}\NormalTok{][}\StringTok{\textquotesingle{}STO{-}1G\textquotesingle{}}\NormalTok{][}\StringTok{\textquotesingle{}coef\textquotesingle{}}\NormalTok{]}
+\NormalTok{αH}\OperatorTok{=}\NormalTok{BasisDat[}\StringTok{\textquotesingle{}H\textquotesingle{}}\NormalTok{][}\StringTok{\textquotesingle{}STO{-}1G\textquotesingle{}}\NormalTok{][}\StringTok{\textquotesingle{}exp\textquotesingle{}}\NormalTok{]}
+
+\NormalTok{dHe }\OperatorTok{=}\NormalTok{BasisDat[}\StringTok{\textquotesingle{}He\textquotesingle{}}\NormalTok{][}\StringTok{\textquotesingle{}STO{-}1G\textquotesingle{}}\NormalTok{][}\StringTok{\textquotesingle{}coef\textquotesingle{}}\NormalTok{]}
+\NormalTok{αHe }\OperatorTok{=}\NormalTok{ BasisDat[}\StringTok{\textquotesingle{}He\textquotesingle{}}\NormalTok{][}\StringTok{\textquotesingle{}STO{-}1G\textquotesingle{}}\NormalTok{][}\StringTok{\textquotesingle{}exp\textquotesingle{}}\NormalTok{]}
+
+\NormalTok{alphas }\OperatorTok{=}\NormalTok{[αH,αHe]}
+\NormalTok{ds}\OperatorTok{=}\NormalTok{ [dH,dHe]}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{definir-integrales}{%
+\subsection{Definir integrales}\label{definir-integrales}}
+
+\hypertarget{integrales-de-traslape-s_mu-nu}{%
+\subsubsection{\texorpdfstring{Integrales de traslape
+\(S_{\mu \nu}\)}{Integrales de traslape S\_\{\textbackslash mu \textbackslash nu\}}}\label{integrales-de-traslape-s_mu-nu}}
+
+La integral de traslape para el orbital 1s de H (\(\mu\)) y el orbital
+1s de He (\(\nu\)) está definida como:
+
+\$\mathbf{S}\_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
+*\}\emph{\{\mu\} \phi\^{}\{CGF\}}\{\nu\} \$
+
+Siendo cada elemento \(S_{\mu\nu}\) el ya calculado en la ecuación (A9)
+de {[}4{]}:
+
+\(S_{pq} = \left( \frac{\pi}{\alpha_{p \mu} + \alpha_{q \nu}} \right)^{3/2} \mathrm{exp}[ -\frac{\alpha_{p \mu} \alpha_{q \nu}}{\alpha_{p \mu}+ \alpha_{q \nu}} |\textbf{R}_A-\textbf{R}_B|^2]\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{S }\OperatorTok{=}\NormalTok{ zeros((dim,dim))}
+
+\ControlFlowTok{for}\NormalTok{ p }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+    \ControlFlowTok{for}\NormalTok{ q }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+\NormalTok{        mu }\OperatorTok{=}\NormalTok{ alphas[p]}
+\NormalTok{        nu }\OperatorTok{=}\NormalTok{ alphas[q]}
+\NormalTok{        N}\OperatorTok{=}\NormalTok{(}\DecValTok{4}\OperatorTok{*}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{/}\NormalTok{(pi}\OperatorTok{**}\DecValTok{2}\NormalTok{))}\OperatorTok{**}\FloatTok{0.75}
+        \ControlFlowTok{if}\NormalTok{ p}\OperatorTok{==}\NormalTok{q:}
+\NormalTok{            S[p,q] }\OperatorTok{=}\NormalTok{ (pi}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}\OperatorTok{**}\NormalTok{(}\FloatTok{1.5}\NormalTok{)}\OperatorTok{*}\NormalTok{N}\OperatorTok{*}\NormalTok{exp(}\OperatorTok{{-}}\DecValTok{1}\OperatorTok{*}\NormalTok{((mu}\OperatorTok{*}\NormalTok{nu)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}\OperatorTok{*}\NormalTok{(rR1)}\OperatorTok{**}\DecValTok{2}\NormalTok{)}
+        \ControlFlowTok{else}\NormalTok{:}
+\NormalTok{            S[p,q]}\OperatorTok{=}\NormalTok{(pi}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}\OperatorTok{**}\NormalTok{(}\FloatTok{1.5}\NormalTok{)}\OperatorTok{*}\NormalTok{N}\OperatorTok{*}\NormalTok{exp(}\OperatorTok{{-}}\DecValTok{1}\OperatorTok{*}\NormalTok{((mu}\OperatorTok{*}\NormalTok{nu)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}\OperatorTok{*}\NormalTok{(rR2)}\OperatorTok{**}\DecValTok{2}\NormalTok{)}
+        \CommentTok{\#print(mu,nu,N)}
+\BuiltInTok{print}\NormalTok{(S)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[[1.         0.50173931]
+ [0.50173931 1.        ]]
+\end{verbatim}
+
+\hypertarget{definir-hathcore_mu-nu}{%
+\subsubsection{\texorpdfstring{Definir
+\(\hat{H}^{core}_{\mu \nu}\)}{Definir \textbackslash hat\{H\}\^{}\{core\}\_\{\textbackslash mu \textbackslash nu\}}}\label{definir-hathcore_mu-nu}}
+
+El \(\hat{H}^{core}_{\mu \nu}\) puede definirse como:
+
+\(\hat{H}^{core}_{\mu \nu} = \textbf{T}_{\mu \nu} + \textbf{V}^{nucH}_{\mu \nu} + \textbf{V}^{nucHe}_{\mu \nu}\)
+
+donde \(\textbf{T}_{\mu \nu}\) es la matriz de la energía cinética de un
+electrón y \(\textbf{V}^{nucC}_{\mu \nu}\) es la matriz correspondiente
+al potencial de atracción entre un electrón y el núcleo \(C\). Cada
+término es calculado de manera similar a \(\mathbf{S}_{\mu \nu}\),
+siendo los correspondientes términos \(T_{pq}\), \(V^H_{pq}\) y
+\(V^{He}_{pq}\) aquellos calculados en (A11) y (A33) en {[}4{]}.
+
+\hypertarget{integral-de-energuxeda-cinuxe9tica-de-un-electruxf3n-t_mu-nu}{%
+\paragraph{\texorpdfstring{Integral de energía cinética de un electrón
+\(T_{\mu \nu}\)}{Integral de energía cinética de un electrón T\_\{\textbackslash mu \textbackslash nu\}}}\label{integral-de-energuxeda-cinuxe9tica-de-un-electruxf3n-t_mu-nu}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{T }\OperatorTok{=}\NormalTok{ zeros((dim,dim))}
+
+\ControlFlowTok{for}\NormalTok{ p }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+    \ControlFlowTok{for}\NormalTok{ q }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+\NormalTok{        mu }\OperatorTok{=}\NormalTok{ alphas[p]}
+\NormalTok{        nu }\OperatorTok{=}\NormalTok{ alphas[q]}
+\NormalTok{        N}\OperatorTok{=}\NormalTok{(}\DecValTok{4}\OperatorTok{*}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{/}\NormalTok{(pi}\OperatorTok{**}\DecValTok{2}\NormalTok{))}\OperatorTok{**}\FloatTok{0.75}
+        \ControlFlowTok{if}\NormalTok{ p}\OperatorTok{==}\NormalTok{q:}
+\NormalTok{            T[p,q]}\OperatorTok{=}\NormalTok{N}\OperatorTok{*}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{(}\FloatTok{3.0}\OperatorTok{{-}}\FloatTok{2.0}\OperatorTok{*}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{*}\NormalTok{(rR1}\OperatorTok{*}\NormalTok{rR2)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}\OperatorTok{*}\NormalTok{(pi}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}\OperatorTok{**}\NormalTok{(}\DecValTok{3}\OperatorTok{/}\DecValTok{2}\NormalTok{)}\OperatorTok{*}\NormalTok{exp(}\OperatorTok{{-}}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{*}\NormalTok{(rR1}\OperatorTok{*}\NormalTok{rR2)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}
+        \ControlFlowTok{else}\NormalTok{:}
+\NormalTok{            T[p,q]}\OperatorTok{=}\NormalTok{N}\OperatorTok{*}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{(}\FloatTok{3.0}\OperatorTok{{-}}\FloatTok{2.0}\OperatorTok{*}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{*}\NormalTok{(rR2}\OperatorTok{*}\NormalTok{rR2)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}\OperatorTok{*}\NormalTok{(pi}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}\OperatorTok{**}\NormalTok{(}\DecValTok{3}\OperatorTok{/}\DecValTok{2}\NormalTok{)}\OperatorTok{*}\NormalTok{exp(}\OperatorTok{{-}}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{*}\NormalTok{(rR2}\OperatorTok{*}\NormalTok{rR2)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}
+\BuiltInTok{print}\NormalTok{(T)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[[0.6249     0.23945188]
+ [0.23945188 1.16085   ]]
+\end{verbatim}
+
+\hypertarget{integrales-de-energuxeda-potencial-de-un-electruxf3n-y-un-nuxfacleo-vnuc_mu-nu}{%
+\paragraph{\texorpdfstring{Integrales de energía potencial de un
+electrón y un núcleo
+\(V^{nuc}_{\mu \nu}\)}{Integrales de energía potencial de un electrón y un núcleo V\^{}\{nuc\}\_\{\textbackslash mu \textbackslash nu\}}}\label{integrales-de-energuxeda-potencial-de-un-electruxf3n-y-un-nuxfacleo-vnuc_mu-nu}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#\#\#Definición de funciones F\_0 y Rp como se realiza en [6]}
+\KeywordTok{def}\NormalTok{ F0(t):}
+    \CommentTok{"""}
+\CommentTok{    Función F para orbital 1s}
+\CommentTok{    """}
+    \ControlFlowTok{if}\NormalTok{ (t}\OperatorTok{\textless{}}\FloatTok{1e{-}6}\NormalTok{):}
+        \ControlFlowTok{return} \FloatTok{1.0}\OperatorTok{{-}}\NormalTok{t}\OperatorTok{/}\FloatTok{3.0}
+    \ControlFlowTok{else}\NormalTok{:}
+        \ControlFlowTok{return} \FloatTok{0.5}\OperatorTok{*}\NormalTok{(pi}\OperatorTok{/}\NormalTok{t)}\OperatorTok{**}\FloatTok{0.5}\OperatorTok{*}\NormalTok{erf(t}\OperatorTok{**}\FloatTok{0.5}\NormalTok{)}
+    
+\KeywordTok{def}\NormalTok{ erf(t):}
+    \CommentTok{"""}
+\CommentTok{    Aproximación para la función de error}
+\CommentTok{    """}
+\NormalTok{    P }\OperatorTok{=} \FloatTok{0.3275911}
+\NormalTok{    A }\OperatorTok{=}\NormalTok{ [}\FloatTok{0.254829592}\NormalTok{,}\OperatorTok{{-}}\FloatTok{0.284496736}\NormalTok{,}\FloatTok{1.421413741}\NormalTok{,}\OperatorTok{{-}}\FloatTok{1.453152027}\NormalTok{,}\FloatTok{1.061405429}\NormalTok{]}
+\NormalTok{    T }\OperatorTok{=} \FloatTok{1.0}\OperatorTok{/}\NormalTok{(}\DecValTok{1}\OperatorTok{+}\NormalTok{P}\OperatorTok{*}\NormalTok{t)}
+\NormalTok{    Tn}\OperatorTok{=}\NormalTok{T}
+\NormalTok{    Poly }\OperatorTok{=}\NormalTok{ A[}\DecValTok{0}\NormalTok{]}\OperatorTok{*}\NormalTok{Tn}
+    \ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{5}\NormalTok{):}
+\NormalTok{        Tn}\OperatorTok{=}\NormalTok{Tn}\OperatorTok{*}\NormalTok{T}
+\NormalTok{        Poly}\OperatorTok{=}\NormalTok{Poly}\OperatorTok{*}\NormalTok{A[i]}\OperatorTok{*}\NormalTok{Tn}
+    \ControlFlowTok{return} \FloatTok{1.0}\OperatorTok{{-}}\NormalTok{Poly}\OperatorTok{*}\NormalTok{exp(}\OperatorTok{{-}}\NormalTok{t}\OperatorTok{*}\NormalTok{t)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{VH }\OperatorTok{=}\NormalTok{ zeros((dim,dim))}
+\NormalTok{VHe }\OperatorTok{=}\NormalTok{ zeros((dim,dim))}
+
+\ControlFlowTok{for}\NormalTok{ p }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+    \ControlFlowTok{for}\NormalTok{ q }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+\NormalTok{        mu }\OperatorTok{=}\NormalTok{ alphas[p]}
+\NormalTok{        nu }\OperatorTok{=}\NormalTok{ alphas[q]}
+\NormalTok{        N}\OperatorTok{=}\NormalTok{(}\DecValTok{4}\OperatorTok{*}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{/}\NormalTok{(pi}\OperatorTok{**}\DecValTok{2}\NormalTok{))}\OperatorTok{**}\FloatTok{0.75}
+
+        \ControlFlowTok{if}\NormalTok{ p}\OperatorTok{==}\NormalTok{q:}
+\NormalTok{            RpH}\OperatorTok{=}\NormalTok{ rR1}
+\NormalTok{            RpHe}\OperatorTok{=}\NormalTok{ rR2}
+\NormalTok{            VH[p,q] }\OperatorTok{=}  \OperatorTok{{-}}\NormalTok{ZH}\OperatorTok{*}\NormalTok{N}\OperatorTok{*}\DecValTok{2}\OperatorTok{*}\NormalTok{pi}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{F0((mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{((RpH}\OperatorTok{{-}}\NormalTok{rR1)}\OperatorTok{**}\DecValTok{2}\NormalTok{))}\OperatorTok{*}\NormalTok{exp(}\OperatorTok{{-}}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{*}\NormalTok{(rR1}\OperatorTok{**}\DecValTok{2}\NormalTok{)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}
+\NormalTok{            VHe[p,q]}\OperatorTok{=} \OperatorTok{{-}}\NormalTok{ZHe}\OperatorTok{*}\NormalTok{N}\OperatorTok{*}\DecValTok{2}\OperatorTok{*}\NormalTok{pi}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{F0((mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{((RpHe}\OperatorTok{{-}}\NormalTok{rR2)}\OperatorTok{**}\DecValTok{2}\NormalTok{))}\OperatorTok{*}\NormalTok{exp(}\OperatorTok{{-}}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{*}\NormalTok{(rR1}\OperatorTok{**}\DecValTok{2}\NormalTok{)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}
+        \ControlFlowTok{else}\NormalTok{:}
+\NormalTok{            Rp}\OperatorTok{=}\NormalTok{(rR1}\OperatorTok{*}\NormalTok{αH}\OperatorTok{+}\NormalTok{rR2}\OperatorTok{*}\NormalTok{αHe)}\OperatorTok{/}\NormalTok{(αH}\OperatorTok{+}\NormalTok{αHe)}
+\NormalTok{            VH[p,q] }\OperatorTok{=}  \OperatorTok{{-}}\NormalTok{ZH}\OperatorTok{*}\NormalTok{N}\OperatorTok{*}\DecValTok{2}\OperatorTok{*}\NormalTok{pi}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{F0((mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{((Rp}\OperatorTok{{-}}\NormalTok{rR1)}\OperatorTok{**}\DecValTok{2}\NormalTok{))}\OperatorTok{*}\NormalTok{exp(}\OperatorTok{{-}}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{*}\NormalTok{(rR2}\OperatorTok{**}\DecValTok{2}\NormalTok{)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}
+\NormalTok{            VHe[p,q]}\OperatorTok{=} \OperatorTok{{-}}\NormalTok{ZHe}\OperatorTok{*}\NormalTok{N}\OperatorTok{*}\DecValTok{2}\OperatorTok{*}\NormalTok{pi}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{F0((mu}\OperatorTok{+}\NormalTok{nu)}\OperatorTok{*}\NormalTok{((Rp}\OperatorTok{{-}}\NormalTok{rR2)}\OperatorTok{**}\DecValTok{2}\NormalTok{))}\OperatorTok{*}\NormalTok{exp(}\OperatorTok{{-}}\NormalTok{mu}\OperatorTok{*}\NormalTok{nu}\OperatorTok{*}\NormalTok{(rR2}\OperatorTok{**}\DecValTok{2}\NormalTok{)}\OperatorTok{/}\NormalTok{(mu}\OperatorTok{+}\NormalTok{nu))}
+\BuiltInTok{print}\NormalTok{(VH)}
+\BuiltInTok{print}\NormalTok{(VHe)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[[-1.02998213 -0.51029092]
+ [-0.51029092 -1.40382341]]
+[[-2.05996426 -1.88085068]
+ [-1.88085068 -2.80764682]]
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Hcore }\OperatorTok{=}\NormalTok{ T }\OperatorTok{+}\NormalTok{ VH }\OperatorTok{+}\NormalTok{ VHe }
+\BuiltInTok{print}\NormalTok{(Hcore)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[[-2.46504639 -2.15168972]
+ [-2.15168972 -3.05062023]]
+\end{verbatim}
+
+\hypertarget{integrales-de-2-electrones-vee_mu-nu-sigma-lambda}{%
+\subsubsection{\texorpdfstring{Integrales de 2 electrones
+\(V^{ee}_{\mu \nu \sigma \lambda}\)}{Integrales de 2 electrones V\^{}\{ee\}\_\{\textbackslash mu \textbackslash nu \textbackslash sigma \textbackslash lambda\}}}\label{integrales-de-2-electrones-vee_mu-nu-sigma-lambda}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Integrales de dos electrones reportadas en [3]}
+\NormalTok{Vee }\OperatorTok{=}\NormalTok{ zeros((dim,dim,dim,dim))}
+
+\NormalTok{Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{]}\OperatorTok{=} \FloatTok{0.7283} \CommentTok{\#A}
+\NormalTok{Vee[}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{]}\OperatorTok{=}\NormalTok{ Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{]}\OperatorTok{=}\NormalTok{ Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{]}\OperatorTok{=}\NormalTok{ Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{]}\OperatorTok{=} \FloatTok{0.3418} \CommentTok{\#B}
+\NormalTok{Vee[}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{]}\OperatorTok{=}\NormalTok{ Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{]}\OperatorTok{=} \FloatTok{0.5850} \CommentTok{\#C}
+\NormalTok{Vee[}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{]}\OperatorTok{=}\NormalTok{ Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{]}\OperatorTok{=} \FloatTok{0.2192} \CommentTok{\#D}
+\NormalTok{Vee[}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{]}\OperatorTok{=}\NormalTok{ Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{]}\OperatorTok{=}\NormalTok{ Vee[}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{]}\OperatorTok{=}\NormalTok{ Vee[}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{]}\OperatorTok{=} \FloatTok{0.4368} \CommentTok{\#E}
+\NormalTok{Vee[}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{]}\OperatorTok{=} \FloatTok{0.9927} \CommentTok{\#F}
+\end{Highlighting}
+\end{Shaded}
+
+Ya que \(S_{\mu\nu}\) es hermítica, esta puede diagonalizarse. Esto
+permitirá resolve la ecuación de Roothan dejando fuera la matriz de
+traslape.
+
+\(\textbf{F}\textbf{C}=\textbf{S}\textbf{C}\pmb{\epsilon} \rightarrow \textbf{F}'\textbf{C}'=\textbf{C}'\pmb{\epsilon}\)
+
+donde \(\textbf{F}' = \textbf{X}^{\dagger}\textbf{F}\textbf{X}\) y
+\(\textbf{X}=\textbf{S}^{1/2}\)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Obtención de la matriz X}
+\NormalTok{eigvalS,U }\OperatorTok{=}\NormalTok{ linalg.eig(S)}
+\NormalTok{diagS }\OperatorTok{=}\NormalTok{ dot(U.T,dot(S,U))}
+\NormalTok{diagsqrtS }\OperatorTok{=}\NormalTok{ diag(diagonal(diagS)}\OperatorTok{**}\NormalTok{(}\OperatorTok{{-}}\DecValTok{1}\OperatorTok{/}\DecValTok{2}\NormalTok{))}
+\NormalTok{X }\OperatorTok{=}\NormalTok{ dot(U,dot(diagsqrtS,U.T))}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{calcular-matriz-de-fock-textbff}{%
+\subsection{\texorpdfstring{Calcular matriz de Fock
+\(\textbf{F}\)}{Calcular matriz de Fock \textbackslash textbf\{F\}}}\label{calcular-matriz-de-fock-textbff}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Proponer C\_i para construcción de P}
+\CommentTok{\#Construir la matriz de densidad P a partir de C}
+\NormalTok{C0 }\OperatorTok{=}\NormalTok{ [}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{]}
+\NormalTok{P0 }\OperatorTok{=}\NormalTok{ zeros((dim,dim))}
+
+\ControlFlowTok{for}\NormalTok{ p }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+    \ControlFlowTok{for}\NormalTok{ q }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+\NormalTok{        P0[p,q] }\OperatorTok{=} \DecValTok{2}\OperatorTok{*}\NormalTok{C0[p]}\OperatorTok{*}\NormalTok{C0[q]}
+\BuiltInTok{print}\NormalTok{(C0)}
+\BuiltInTok{print}\NormalTok{(P0)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[0, 0]
+[[0. 0.]
+ [0. 0.]]
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Calcular G0}
+\NormalTok{G011}\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}\NormalTok{ G022}\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}\NormalTok{ G012}\OperatorTok{=}\NormalTok{[]}
+\ControlFlowTok{for}\NormalTok{ n }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+    \ControlFlowTok{for}\NormalTok{ m }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+\NormalTok{        g11 }\OperatorTok{=}\NormalTok{ P0[n][m]}\OperatorTok{*}\NormalTok{(Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{][n][m]}\OperatorTok{{-}}\FloatTok{0.5}\OperatorTok{*}\NormalTok{Vee[}\DecValTok{0}\NormalTok{][m][n][}\DecValTok{0}\NormalTok{])}
+\NormalTok{        g22 }\OperatorTok{=}\NormalTok{ P0[n][m]}\OperatorTok{*}\NormalTok{(Vee[}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{][n][m]}\OperatorTok{{-}}\FloatTok{0.5}\OperatorTok{*}\NormalTok{Vee[}\DecValTok{1}\NormalTok{][m][n][}\DecValTok{1}\NormalTok{])}
+\NormalTok{        g12 }\OperatorTok{=}\NormalTok{ P0[n][m]}\OperatorTok{*}\NormalTok{(Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{][n][m]}\OperatorTok{{-}}\FloatTok{0.5}\OperatorTok{*}\NormalTok{Vee[}\DecValTok{0}\NormalTok{][m][n][}\DecValTok{1}\NormalTok{])}
+\NormalTok{        G011.append(g11)}
+\NormalTok{        G022.append(g22)}
+\NormalTok{        G012.append(g12)}
+
+\NormalTok{        G021 }\OperatorTok{=}\NormalTok{ G012}
+\NormalTok{G0 }\OperatorTok{=}\NormalTok{ [[}\BuiltInTok{sum}\NormalTok{(G011),}\BuiltInTok{sum}\NormalTok{(G012)],[}\BuiltInTok{sum}\NormalTok{(G021),}\BuiltInTok{sum}\NormalTok{(G022)]]}
+\NormalTok{G0}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+[[0.0, 0.0], [0.0, 0.0]]
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{F0 }\OperatorTok{=}\NormalTok{ Hcore }\OperatorTok{+}\NormalTok{ G0}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{transformar-textbff-a-matriz-textbff}{%
+\subsection{\texorpdfstring{Transformar \(\textbf{F}\) a matriz
+\(\textbf{F}'\)}{Transformar \textbackslash textbf\{F\} a matriz \textbackslash textbf\{F\}\textquotesingle{}}}\label{transformar-textbff-a-matriz-textbff}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{F0p }\OperatorTok{=}\NormalTok{ X}\OperatorTok{*}\NormalTok{F0}\OperatorTok{*}\NormalTok{X}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc}{%
+\subsection{\texorpdfstring{Diagonalizar matriz \(\textbf{F}'\) para
+obtener \(\pmb{\epsilon}\) y
+\(\textbf{C}'\)}{Diagonalizar matriz \textbackslash textbf\{F\}\textquotesingle{} para obtener \textbackslash pmb\{\textbackslash epsilon\} y \textbackslash textbf\{C\}\textquotesingle{}}}\label{diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{eigvalF0p,eigvecF0p }\OperatorTok{=}\NormalTok{ linalg.eig(F0p)}
+\NormalTok{ϵ }\OperatorTok{=}\NormalTok{ diag(eigvalF0p)}
+\NormalTok{Cp }\OperatorTok{=}\NormalTok{ eigvecF0p.T}
+
+\NormalTok{Cpm1}\OperatorTok{=}\NormalTok{inv(Cp)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{transformar-textbfc-a-textbfc}{%
+\subsection{\texorpdfstring{Transformar \(\textbf{C}'\) a
+\(\textbf{C}\)}{Transformar \textbackslash textbf\{C\}\textquotesingle{} a \textbackslash textbf\{C\}}}\label{transformar-textbfc-a-textbfc}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{C }\OperatorTok{=}\NormalTok{ X}\OperatorTok{*}\NormalTok{Cp}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{comparar-paruxe1metros-para-revisar-convergencia}{%
+\subsection{Comparar parámetros para revisar
+convergencia}\label{comparar-paruxe1metros-para-revisar-convergencia}}
+
+A partir del paso 4, el procedimiento anterior se simplifica en un loop
+para buscar la convergencia:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{delta }\OperatorTok{=} \FloatTok{0.0003} \CommentTok{\#parámetro para convergencia}
+\NormalTok{maxit }\OperatorTok{=} \DecValTok{100} \CommentTok{\#máximo número de iteraciones}
+\NormalTok{Cs }\OperatorTok{=}\NormalTok{ []}
+\NormalTok{Cs.append([[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{],[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{]])}
+
+\NormalTok{Es}\OperatorTok{=}\NormalTok{[]}
+
+\ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(maxit):}
+    
+    \CommentTok{\#print(\textquotesingle{}Iteración\textquotesingle{},n)}
+\NormalTok{    P }\OperatorTok{=}\NormalTok{ zeros((dim,dim))}
+    \ControlFlowTok{for}\NormalTok{ p }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+        \ControlFlowTok{for}\NormalTok{ q }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+\NormalTok{            P[p,q] }\OperatorTok{=} \DecValTok{2}\OperatorTok{*}\NormalTok{Cs[i][}\DecValTok{0}\NormalTok{][p]}\OperatorTok{*}\NormalTok{Cs[i][}\DecValTok{1}\NormalTok{][q]}
+            
+\NormalTok{    G11}\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}\NormalTok{ G22}\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}\NormalTok{ G12}\OperatorTok{=}\NormalTok{[]}
+    \ControlFlowTok{for}\NormalTok{ n }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+        \ControlFlowTok{for}\NormalTok{ m }\KeywordTok{in}\NormalTok{ arange(}\DecValTok{0}\NormalTok{,dim):}
+\NormalTok{            g11 }\OperatorTok{=}\NormalTok{ P[n][m]}\OperatorTok{*}\NormalTok{(Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{0}\NormalTok{][n][m]}\OperatorTok{{-}}\FloatTok{0.5}\OperatorTok{*}\NormalTok{Vee[}\DecValTok{0}\NormalTok{][m][n][}\DecValTok{0}\NormalTok{])}
+\NormalTok{            g22 }\OperatorTok{=}\NormalTok{ P[n][m]}\OperatorTok{*}\NormalTok{(Vee[}\DecValTok{1}\NormalTok{][}\DecValTok{1}\NormalTok{][n][m]}\OperatorTok{{-}}\FloatTok{0.5}\OperatorTok{*}\NormalTok{Vee[}\DecValTok{1}\NormalTok{][m][n][}\DecValTok{1}\NormalTok{])}
+\NormalTok{            g12 }\OperatorTok{=}\NormalTok{ P[n][m]}\OperatorTok{*}\NormalTok{(Vee[}\DecValTok{0}\NormalTok{][}\DecValTok{1}\NormalTok{][n][m]}\OperatorTok{{-}}\FloatTok{0.5}\OperatorTok{*}\NormalTok{Vee[}\DecValTok{0}\NormalTok{][m][n][}\DecValTok{1}\NormalTok{])}
+\NormalTok{            G11.append(g11)}
+\NormalTok{            G22.append(g22)}
+\NormalTok{            G12.append(g12)}
+\NormalTok{    G21 }\OperatorTok{=}\NormalTok{ G12}
+\NormalTok{    G }\OperatorTok{=}\NormalTok{ [[}\BuiltInTok{sum}\NormalTok{(G11),}\BuiltInTok{sum}\NormalTok{(G12)],[}\BuiltInTok{sum}\NormalTok{(G21),}\BuiltInTok{sum}\NormalTok{(G22)]]}
+
+\NormalTok{    F }\OperatorTok{=}\NormalTok{ Hcore }\OperatorTok{+}\NormalTok{ G}
+\NormalTok{    Fp }\OperatorTok{=}\NormalTok{ X}\OperatorTok{*}\NormalTok{F}\OperatorTok{*}\NormalTok{X}
+\NormalTok{    eigvalFp,eigvecFp }\OperatorTok{=}\NormalTok{ linalg.eig(Fp)}
+    
+\NormalTok{    ϵ }\OperatorTok{=}\NormalTok{ diag(eigvalFp)}
+\NormalTok{    Cp }\OperatorTok{=}\NormalTok{ eigvecFp.T}
+\NormalTok{    Cpm1}\OperatorTok{=}\NormalTok{inv(Cp)}
+\NormalTok{    Ci }\OperatorTok{=}\NormalTok{ X}\OperatorTok{*}\NormalTok{Cp}
+\NormalTok{    Cs.append(Ci)}
+
+\NormalTok{    E }\OperatorTok{=}\NormalTok{ trace(ϵ }\OperatorTok{+} \FloatTok{0.5}\OperatorTok{*}\NormalTok{(P}\OperatorTok{*}\NormalTok{Hcore))}
+
+\NormalTok{    Es.append(E)}
+\NormalTok{    diff}\OperatorTok{=}\BuiltInTok{abs}\NormalTok{(Es[i]}\OperatorTok{{-}}\NormalTok{Es[i}\OperatorTok{{-}}\DecValTok{1}\NormalTok{])}
+    
+    \ControlFlowTok{if}\NormalTok{ i}\OperatorTok{\textgreater{}}\DecValTok{1} \KeywordTok{and}\NormalTok{ diff}\OperatorTok{==}\DecValTok{0}\NormalTok{:}
+        \BuiltInTok{print}\NormalTok{(}\StringTok{\textquotesingle{}done\textquotesingle{}}\NormalTok{)}
+        \BuiltInTok{print}\NormalTok{(}\StringTok{\textquotesingle{}EHF =\textquotesingle{}}\NormalTok{,E)}
+        \ControlFlowTok{break}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+done
+EHF = -5.758039504430063
+\end{verbatim}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{teoruxeda-de-los-funcionales-de-la-densidad-dft}{%
+\chapter{Teoría de los funcionales de la densidad
+(DFT)}\label{teoruxeda-de-los-funcionales-de-la-densidad-dft}}
+
+\hypertarget{anuxe1lisis-de-cargas}{%
+\section{Análisis de cargas}\label{anuxe1lisis-de-cargas}}
+
+notebook-view: - notebook: QuantChem\_DFT-AnCarg.ipynb title: ``Análisis
+de carga'' url:
+https://colab.research.google.com/drive/1-z-jSt-XKtAPTwUHWgcmdKWHyCoMr\_lF?usp=sharing
+
+\hypertarget{orbitales-moleculares}{%
+\section{Orbitales moleculares}\label{orbitales-moleculares}}
+
+notebook-view: - notebook: QuantChem\_DFT-AnCarg.ipynb title: ``Análisis
+de carga'' url:
+https://colab.research.google.com/drive/1ScEn-\_JFap2G\_YVkTGJeTCdOwuC3WVGy?usp=sharing
+
+\hypertarget{estructura-de-bandas}{%
+\section{Estructura de bandas}\label{estructura-de-bandas}}
+
+\hypertarget{anuxe1lisis-de-hibridaciuxf3n-de-orbitales}{%
+\section{Análisis de hibridación de
+orbitales}\label{anuxe1lisis-de-hibridaciuxf3n-de-orbitales}}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-knuth84}{}}%
+Knuth, Donald E. 1984. {``Literate Programming.''} \emph{Comput. J.} 27
+(2): 97--111. \url{https://doi.org/10.1093/comjnl/27.2.97}.
+
+\end{CSLReferences}
+
+
+
+\end{document}

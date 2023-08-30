@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Montserrat Navarro Espino">
-<meta name="dcterms.date" content="2023-07-31">
 
-<title>Temas selectos de Química Cuántica</title>
+<title>Temas selectos de Química Cuántica - 3&nbsp; Teoría de los funcionales de la densidad (DFT)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./references.html" rel="next">
+<link href="./H-F.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Temas selectos de Química Cuántica</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Teoría de los funcionales de la densidad (DFT)</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -96,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Prefacio</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Prefacio</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -111,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./DFT.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Teoría de los funcionales de la densidad (DFT)</span></a>
+  <a href="./DFT.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Teoría de los funcionales de la densidad (DFT)</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -128,7 +127,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link active" data-scroll-target="#prefacio">Prefacio</a></li>
+  <li><a href="#análisis-de-cargas" id="toc-análisis-de-cargas" class="nav-link active" data-scroll-target="#análisis-de-cargas"><span class="toc-section-number">3.1</span>  Análisis de cargas</a></li>
+  <li><a href="#orbitales-moleculares" id="toc-orbitales-moleculares" class="nav-link" data-scroll-target="#orbitales-moleculares"><span class="toc-section-number">3.2</span>  Orbitales moleculares</a></li>
+  <li><a href="#estructura-de-bandas" id="toc-estructura-de-bandas" class="nav-link" data-scroll-target="#estructura-de-bandas"><span class="toc-section-number">3.3</span>  Estructura de bandas</a></li>
+  <li><a href="#análisis-de-hibridación-de-orbitales" id="toc-análisis-de-hibridación-de-orbitales" class="nav-link" data-scroll-target="#análisis-de-hibridación-de-orbitales"><span class="toc-section-number">3.4</span>  Análisis de hibridación de orbitales</a></li>
   </ul>
 </nav>
     </div>
@@ -137,37 +139,33 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Temas selectos de Química Cuántica</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Teoría de los funcionales de la densidad (DFT)</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Montserrat Navarro Espino </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 31, 2023</p>
-    </div>
-  </div>
     
   </div>
   
 
 </header>
 
-<section id="prefacio" class="level1 unnumbered">
-<h1 class="unnumbered">Prefacio</h1>
-<p>Este es un sitio creado con Quarto y publicado a través de GitHub Pages. En él se encuentran conceptos y ejercicios relevantes para el estudio de la Química Cuántica.</p>
-<p>La elaboración de estas notas tiene como propósito revisar conceptos selectos de Química Cuántica, así como la resolución de problemas de forma numérica o a través del uso de la librería GPAW en el lenguaje de programación Python.</p>
-<p>Esta recopilación y adaptación de material se realizó como una actividad de retribución a la beca de CONAHCyT recibida por la autora durante su estancia en el Programa de Maestría en Ciencias Químicas.</p>
+<section id="análisis-de-cargas" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="análisis-de-cargas"><span class="header-section-number">3.1</span> Análisis de cargas</h2>
+<p>notebook-view: - notebook: QuantChem_DFT-AnCarg.ipynb title: “Análisis de carga” url: https://colab.research.google.com/drive/1-z-jSt-XKtAPTwUHWgcmdKWHyCoMr_lF?usp=sharing</p>
+</section>
+<section id="orbitales-moleculares" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="orbitales-moleculares"><span class="header-section-number">3.2</span> Orbitales moleculares</h2>
+<p>notebook-view: - notebook: QuantChem_DFT-AnCarg.ipynb title: “Análisis de carga” url: https://colab.research.google.com/drive/1ScEn-_JFap2G_YVkTGJeTCdOwuC3WVGy?usp=sharing</p>
+</section>
+<section id="estructura-de-bandas" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="estructura-de-bandas"><span class="header-section-number">3.3</span> Estructura de bandas</h2>
+</section>
+<section id="análisis-de-hibridación-de-orbitales" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="análisis-de-hibridación-de-orbitales"><span class="header-section-number">3.4</span> Análisis de hibridación de orbitales</h2>
 
 
 </section>
@@ -273,10 +271,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./H-F.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Método de Hartree-Fock</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

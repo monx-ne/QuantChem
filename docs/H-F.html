@@ -159,7 +159,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Prefacio</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -222,9 +222,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <p>Las ecuaciones de Hartree-Fock son ecuaciones no lineares que pueden ser resueltas con los métodos numéricos apropiados. Sin embargo, en 1951, C.C.J. Roothan demostró que utilizando el método de LCAO, las ecuaciones de Fock se simplifican reformulándose como matrices [1][2].</p>
 <p>En este ejemplo, se resolverá la ecuación de Roothan <span class="math inline">\(\textbf{F}\textbf{C}=\textbf{S}\textbf{C}\pmb{\epsilon}\)</span> para el ión de hidruro de helio (<span class="math inline">\(HeH^{+}\)</span>) siguiendo el algoritmo esquematizado en la siguiente figura[3]:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/im22.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">1</figcaption><p></p>
+</figure>
+</div>
 <section id="definir-sistema-de-estudio-y-base" class="level3" data-number="2.0.1">
 <h3 data-number="2.0.1" class="anchored" data-anchor-id="definir-sistema-de-estudio-y-base"><span class="header-section-number">2.0.1</span> Definir sistema de estudio y base</h3>
-<p>El presente proyecto se realizó bajo el sistema de referencia:</p>
+<p>El presente proyecto se realizó bajo el sistema de referencia: <img src="images/im11.png" class="img-fluid" alt="1"></p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span><span class="op">*</span></span>
@@ -521,7 +527,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb23-46"><a href="#cb23-46" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>done
-EHF = -5.758039504430062</code></pre>
+EHF = -5.758039504430063</code></pre>
 </div>
 </div>
 
