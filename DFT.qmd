@@ -7,13 +7,16 @@ notebook-view:
     title: "Análisis de carga"
     url: https://colab.research.google.com/drive/1-z-jSt-XKtAPTwUHWgcmdKWHyCoMr_lF?usp=sharing
 
+{{< embed QuantChem_DFT-AnCarg.ipynb#fig-conv-hs >}}
+
+
 ## Orbitales moleculares
 
 notebook-view:
-  - notebook: QuantChem_DFT-AnCarg.ipynb
-    title: "Análisis de carga"
+  - notebook: QuantChem_DFT-OM.ipynb
+    title: "Orbitale moleculares"
     url: https://colab.research.google.com/drive/1ScEn-_JFap2G_YVkTGJeTCdOwuC3WVGy?usp=sharing
-    
+
 ## Estructura de bandas
 
 

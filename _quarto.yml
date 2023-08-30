@@ -13,6 +13,11 @@ book:
     - DFT.qmd
     - references.qmd
 
+notebook-view:
+  - notebook: QuantChem_DFT-AnCarg.ipynb
+    title: "Análisis de carga"
+    url: https://colab.research.google.com/drive/1-z-jSt-XKtAPTwUHWgcmdKWHyCoMr_lF?usp=sharing
+
 bibliography: references.bib
 
 format:
