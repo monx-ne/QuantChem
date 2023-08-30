@@ -17,7 +17,9 @@ notebook-view:
     title: "Orbitale moleculares"
     url: https://colab.research.google.com/drive/1ScEn-_JFap2G_YVkTGJeTCdOwuC3WVGy?usp=sharing
 
-## Estructura de bandas
+## Estructura de bandas y análisis de hibridación de orbitales
 
-
-## Análisis de hibridación de orbitales
+notebook-view:
+  - notebook: QuantChem_DFT-EstBandyHib.ipynb
+    title: "Estructura de bandas e hibridación de orbitales"
+    url: https://colab.research.google.com/drive/19Ur1K-oclYn760U0xKHxotvf59xvMNbN?usp=sharing
