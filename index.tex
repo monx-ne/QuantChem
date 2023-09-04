@@ -213,7 +213,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, interior hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, boxrule=0pt, breakable, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, breakable, enhanced, sharp corners, frame hidden, boxrule=0pt, interior hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -682,7 +682,7 @@ para buscar la convergencia:
 
 \begin{verbatim}
 done
-EHF = -5.758039504430063
+EHF = -5.758039504430062
 \end{verbatim}
 
 \bookmarksetup{startatroot}
@@ -694,9 +694,8 @@ EHF = -5.758039504430063
 \hypertarget{anuxe1lisis-de-cargas}{%
 \section{Análisis de cargas}\label{anuxe1lisis-de-cargas}}
 
-notebook-view: - notebook: QuantChem\_DFT-AnCarg.ipynb title: ``Análisis
-de carga'' url:
-https://colab.research.google.com/drive/1-z-jSt-XKtAPTwUHWgcmdKWHyCoMr\_lF?usp=sharing
+Las cargas de Hirshfeld se definen respecto a a una deformación de la
+densidad electrónica.
 
 \hypertarget{orbitales-moleculares}{%
 \section{Orbitales moleculares}\label{orbitales-moleculares}}

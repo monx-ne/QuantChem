@@ -2,10 +2,7 @@
 
 ## Análisis de cargas
 
-notebook-view:
-  - notebook: QuantChem_DFT-AnCarg.ipynb
-    title: "Análisis de carga"
-    url: https://colab.research.google.com/drive/1-z-jSt-XKtAPTwUHWgcmdKWHyCoMr_lF?usp=sharing
+Las cargas de Hirshfeld se definen respecto a a una deformación de la densidad electrónica. 
 
 {{< embed QuantChem_DFT-AnCarg.ipynb#fig-conv-hs >}}
 
