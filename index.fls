@@ -1270,6 +1270,8 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.toc
+INPUT /Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.toc
 OUTPUT /Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.toc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/lm/rm-lmr8.tfm
