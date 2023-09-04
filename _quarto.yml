@@ -11,7 +11,7 @@ book:
     - intro.qmd
     - H-F.qmd
     - DFT.qmd
-    - references.qmd
+  # - references.qmd
 
 notebook-view:
   - notebook: QuantChem_DFT-AnCarg.ipynb

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.3)  4 SEP 2023 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.3)  4 SEP 2023 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2266,11 +2266,11 @@ l.350 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 31425 strings out of 478994
- 623190 string characters out of 5858185
+ 31423 strings out of 478994
+ 623168 string characters out of 5858185
  1117379 words of memory out of 5000000
  48273 multiletter control sequences out of 15000+600000
- 464100 words of font info for 111 fonts, out of 8000000 for 9000
+ 464017 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,7n,404p,10673b,930s stack positions out of 5000i,500n,10000p,200000b,80000s
 

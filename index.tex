@@ -213,7 +213,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, boxrule=0pt, sharp corners, frame hidden, enhanced, breakable, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, interior hidden, frame hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, breakable, enhanced]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -228,13 +228,13 @@
 \addcontentsline{toc}{chapter}{Prefacio}
 
 Este es un sitio creado con Quarto y publicado a través de GitHub Pages.
-En él se encuentran conceptos y ejercicios relevantes para el estudio de
-la Química Cuántica.
+En él, se pueden encontrar ejemplos de ejercicios relevantes para el
+estudio de la Química Cuántica.
 
-La elaboración de estas notas tiene como propósito revisar conceptos
+La elaboración de estas notas tiene como propósito aplicar conceptos
 selectos de Química Cuántica, así como la resolución de problemas de
-forma numérica o a través del uso de la librería GPAW en el lenguaje de
-programación Python.
+forma numérica o a través del uso de diferentes liberías en el lenguaje
+de programación Python.
 
 Esta recopilación y adaptación de material se realizó como una actividad
 de retribución a la beca de CONAHCyT recibida por la autora durante su
@@ -698,13 +698,26 @@ funcional de la densidad del estado basal \(n_0(\textbf{r})\) (ver
 Martin 2008). A continuación, se presentan tres ejemplos del cálculo de
 propiedades de diferentes sistemas utilizando GPAW, una librería de
 Python basada en DFT, el método PAW y el ambiente de simulación atómica
-ASE (ver 2023).
+ASE (ver dtu 2023).
 
 \hypertarget{anuxe1lisis-de-cargas}{%
 \section{Análisis de cargas}\label{anuxe1lisis-de-cargas}}
 
 Las cargas de Hirshfeld se definen respecto a a una deformación de la
-densidad electrónica.
+densidad electrónica. Bajo este esquema, para una descripción
+cuantitativa de la distribución de carga en moléculas o sólidos es
+conveniente dividir el sistema en fragmentos conformados por átomos, lo
+que resulta en un compartimento de la densidad y una fuerte localización
+de la carga entre ellos. Considerando las deformación de la densidad
+atómica (ssiendo esta una comparación entre átomos enlazados vs átomos
+libres) se definen cargas atómicas netas y momentos multipolo, siendo
+estos los elementos usados para definir la reorganización de la carga en
+toda la molécula. Esto permite calcular el potencial electroestático
+externo y la energía de interacción entre moléculas o partes de la misma
+molécula (ver Hirshfeld 1977).
+
+A continuación, se muestra un ejemplo de análisis de carga en el esquema
+de Hirshfeld utilizando la librería GPAW.
 
 \hypertarget{orbitales-moleculares}{%
 \section{Orbitales moleculares}\label{orbitales-moleculares}}
@@ -721,17 +734,16 @@ notebook-view: - notebook: QuantChem\_DFT-EstBandyHib.ipynb title:
 ``Estructura de bandas e hibridación de orbitales'' url:
 https://colab.research.google.com/drive/19Ur1K-oclYn760U0xKHxotvf59xvMNbN?usp=sharing
 
-\bookmarksetup{startatroot}
-
-\hypertarget{references}{%
-\chapter*{References}\label{references}}
-\addcontentsline{toc}{chapter}{References}
-
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
 \leavevmode\vadjust pre{\hypertarget{ref-GPAW_2023}{}}%
-2023. \emph{GPAW: DFT and Beyond Within the Projector-Augmented Wave
-Method - GPAW}. \url{https://wiki.fysik.dtu.dk/gpaw/}.
+dtu. 2023. \emph{GPAW: DFT and Beyond Within the Projector-Augmented
+Wave Method - GPAW}. \url{https://wiki.fysik.dtu.dk/gpaw/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hirshfeld1977}{}}%
+Hirshfeld, F. L. 1977. {``Bonded-Atom Fragments for Describing Molecular
+Charge Densities.''} \emph{Theoretica Chimica Acta} 44 (2): 129--38.
+\url{https://doi.org/10.1007/BF00549096}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Martin2008-gc}{}}%
 Martin, Richard M. 2008. \emph{Electronic Structure: Basic Theory and

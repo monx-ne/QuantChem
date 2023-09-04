@@ -4,7 +4,14 @@ La Teoría de los Funcionales de la Densidad (DFT, por sus siglas en inglés) tr
 
 ## Análisis de cargas
 
-Las cargas de Hirshfeld se definen respecto a a una deformación de la densidad electrónica. 
+Las cargas de Hirshfeld se definen respecto a a una deformación de la densidad electrónica. Bajo este esquema, para una descripción cuantitativa 
+de la distribución de carga en moléculas o sólidos es conveniente dividir el sistema en fragmentos conformados por átomos, lo
+que resulta en un compartimento de la densidad y una fuerte localización de la carga entre ellos. Considerando las deformación de la densidad atómica (ssiendo esta una comparación entre átomos enlazados vs átomos libres) 
+se definen cargas atómicas netas y momentos multipolo, siendo estos los elementos usados para definir la reorganización de la carga en toda la molécula. Esto permite calcular el potencial electroestático externo y la energía de interacción 
+entre moléculas o partes de la misma molécula [ver @Hirshfeld1977].
+
+A continuación, se muestra un ejemplo de código para el análisis de carga para la molécula de HCN en el esquema de Hirshfeld utilizando la librería GPAW.
+
 
 {{< embed QuantChem_DFT-AnCarg.ipynb#fig-conv-hs >}}
 

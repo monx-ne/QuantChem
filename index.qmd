@@ -1,7 +1,7 @@
 # Prefacio {.unnumbered}
 
-Este es un sitio creado con Quarto y publicado a través de GitHub Pages. En él se encuentran conceptos y ejercicios relevantes para el estudio de la Química Cuántica.
+Este es un sitio creado con Quarto y publicado a través de GitHub Pages. En él, se pueden encontrar ejemplos de ejercicios relevantes para el estudio de la Química Cuántica.
 
-La elaboración de estas notas tiene como propósito revisar conceptos selectos de Química Cuántica, así como la resolución de problemas de forma numérica o a través del uso de la librería GPAW en el lenguaje de programación Python.
+La elaboración de estas notas tiene como propósito aplicar conceptos selectos de Química Cuántica, así como la resolución de problemas de forma numérica o a través del uso de diferentes liberías en el lenguaje de programación Python.
 
 Esta recopilación y adaptación de material se realizó como una actividad de retribución a la beca de CONAHCyT recibida por la autora durante su estancia en el Programa de Maestría en Ciencias Químicas. 
