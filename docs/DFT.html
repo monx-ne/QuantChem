@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -61,6 +80,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -152,6 +172,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>La Teoría de los Funcionales de la Densidad (DFT, por sus siglas en inglés) trabaja sobre la premisa de que cualquier propiedad de un sistema de varias partículas que interactúan puede visualizarse como un funcional de la densidad del estado basal <span class="math inline">\(n_0(\textbf{r})\)</span> <span class="citation" data-cites="Martin2008-gc">(ver <a href="#ref-Martin2008-gc" role="doc-biblioref">Martin 2008</a>)</span>. A continuación, se presentan tres ejemplos del cálculo de propiedades de diferentes sistemas utilizando GPAW, una librería de Python basada en DFT, el método PAW y el ambiente de simulación atómica ASE <span class="citation" data-cites="GPAW_2023">(ver <a href="#ref-GPAW_2023" role="doc-biblioref">2023</a>)</span>.</p>
 <section id="análisis-de-cargas" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="análisis-de-cargas"><span class="header-section-number">3.1</span> Análisis de cargas</h2>
 <p>Las cargas de Hirshfeld se definen respecto a a una deformación de la densidad electrónica.</p>
@@ -166,6 +187,14 @@ ul.task-list li input[type="checkbox"] {
 <p>notebook-view: - notebook: QuantChem_DFT-EstBandyHib.ipynb title: “Estructura de bandas e hibridación de orbitales” url: https://colab.research.google.com/drive/19Ur1K-oclYn760U0xKHxotvf59xvMNbN?usp=sharing</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-GPAW_2023" class="csl-entry" role="doc-biblioentry">
+2023. <em>GPAW: DFT and Beyond Within the Projector-Augmented Wave Method - GPAW</em>. <a href="https://wiki.fysik.dtu.dk/gpaw/">https://wiki.fysik.dtu.dk/gpaw/</a>.
+</div>
+<div id="ref-Martin2008-gc" class="csl-entry" role="doc-biblioentry">
+Martin, Richard M. 2008. <em>Electronic Structure: Basic Theory and Practical Methods</em>. Cambridge University Press.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

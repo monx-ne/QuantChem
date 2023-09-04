@@ -1,5 +1,7 @@
 # Teoría de los funcionales de la densidad (DFT)
 
+La Teoría de los Funcionales de la Densidad (DFT, por sus siglas en inglés) trabaja sobre la premisa de que cualquier propiedad de un sistema de varias partículas que interactúan puede visualizarse como un funcional de la densidad del estado basal $n_0(\textbf{r})$ [ver @Martin2008-gc]. A continuación, se presentan tres ejemplos del cálculo de propiedades de diferentes sistemas utilizando GPAW, una librería de Python basada en DFT, el método PAW y el ambiente de simulación atómica ASE [ver @GPAW_2023]. 
+
 ## Análisis de cargas
 
 Las cargas de Hirshfeld se definen respecto a a una deformación de la densidad electrónica. 

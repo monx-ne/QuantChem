@@ -213,7 +213,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, breakable, enhanced, sharp corners, frame hidden, boxrule=0pt, interior hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, boxrule=0pt, sharp corners, frame hidden, enhanced, breakable, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -691,6 +691,15 @@ EHF = -5.758039504430062
 \chapter{Teoría de los funcionales de la densidad
 (DFT)}\label{teoruxeda-de-los-funcionales-de-la-densidad-dft}}
 
+La Teoría de los Funcionales de la Densidad (DFT, por sus siglas en
+inglés) trabaja sobre la premisa de que cualquier propiedad de un
+sistema de varias partículas que interactúan puede visualizarse como un
+funcional de la densidad del estado basal \(n_0(\textbf{r})\) (ver
+Martin 2008). A continuación, se presentan tres ejemplos del cálculo de
+propiedades de diferentes sistemas utilizando GPAW, una librería de
+Python basada en DFT, el método PAW y el ambiente de simulación atómica
+ASE (ver 2023).
+
 \hypertarget{anuxe1lisis-de-cargas}{%
 \section{Análisis de cargas}\label{anuxe1lisis-de-cargas}}
 
@@ -719,7 +728,15 @@ https://colab.research.google.com/drive/19Ur1K-oclYn760U0xKHxotvf59xvMNbN?usp=sh
 \addcontentsline{toc}{chapter}{References}
 
 \hypertarget{refs}{}
-\begin{CSLReferences}{0}{0}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-GPAW_2023}{}}%
+2023. \emph{GPAW: DFT and Beyond Within the Projector-Augmented Wave
+Method - GPAW}. \url{https://wiki.fysik.dtu.dk/gpaw/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Martin2008-gc}{}}%
+Martin, Richard M. 2008. \emph{Electronic Structure: Basic Theory and
+Practical Methods}. Cambridge University Press.
+
 \end{CSLReferences}
 
 
