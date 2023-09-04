@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.3)  4 SEP 2023 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.3)  4 SEP 2023 16:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -989,1293 +989,1293 @@ Class scrreprt Warning: \float@addtolists detected!
 ]
 chapter 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 262.
+(Font)              <10.95> on input line 271.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 262.
+(Font)              <8> on input line 271.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 262.
+(Font)              <6> on input line 271.
 <./images/im22.png, id=33, 685.56125pt x 678.535pt>
 File: ./images/im22.png Graphic file (type png)
 <use ./images/im22.png>
-Package pdftex.def Info: ./images/im22.png  used on input line 268.
+Package pdftex.def Info: ./images/im22.png  used on input line 277.
 (pdftex.def)             Requested size: 446.77068pt x 442.19177pt.
 <./images/im11.png, id=35, 688.5725pt x 401.5pt>
 File: ./images/im11.png Graphic file (type png)
 <use ./images/im11.png>
-Package pdftex.def Info: ./images/im11.png  used on input line 281.
+Package pdftex.def Info: ./images/im11.png  used on input line 290.
 (pdftex.def)             Requested size: 446.7578pt x 260.50017pt.
 
-Overfull \hbox (286.53043pt too wide) in paragraph at lines 280--282
+Overfull \hbox (286.53043pt too wide) in paragraph at lines 289--291
 \T1/lmr/m/n/10.95 (-20) El pre-sente proyecto se re-al-iz� bajo el sis-tema de ref-er-en-cia: [] 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 284.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 293.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [5
 
  </Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/./images/im11.png>] [6 </Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/./images/im22.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 324.
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 333.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:330: Package inputenc Error: Unicode character α (U+03B1)
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:339: Package inputenc Error: Unicode character α (U+03B1)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.330 ...ngle{}exp\textquotesingle{}}\NormalTok{]}
+l.339 ...ngle{}exp\textquotesingle{}}\NormalTok{]}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:333: Package inputenc Error: Unicode character α (U+03B1)
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:342: Package inputenc Error: Unicode character α (U+03B1)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.333 ...ngle{}exp\textquotesingle{}}\NormalTok{]}
+l.342 ...ngle{}exp\textquotesingle{}}\NormalTok{]}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:335: Package inputenc Error: Unicode character α (U+03B1)
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:344: Package inputenc Error: Unicode character α (U+03B1)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335 ...as }\OperatorTok{=}\NormalTok{[αH,αHe]}
+l.344 ...as }\OperatorTok{=}\NormalTok{[αH,αHe]}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:335: Package inputenc Error: Unicode character α (U+03B1)
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:344: Package inputenc Error: Unicode character α (U+03B1)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335 ...as }\OperatorTok{=}\NormalTok{[αH,αHe]}
+l.344 ...as }\OperatorTok{=}\NormalTok{[αH,αHe]}
                                                   
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350: LaTeX Error: \expandafterallowed only in math mode.
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359: LaTeX Error: \expandafterallowed only in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.350 \$\mathbf{S}
+l.359 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 31423 strings out of 478994
- 623168 string characters out of 5858185
+ 31430 strings out of 478994
+ 623235 string characters out of 5858185
  1117379 words of memory out of 5000000
- 48273 multiletter control sequences out of 15000+600000
- 464017 words of font info for 110 fonts, out of 8000000 for 9000
+ 48272 multiletter control sequences out of 15000+600000
+ 464349 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,7n,404p,10673b,932s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:350:  ==> Fatal error occurred, no output PDF file produced!
+/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex:359:  ==> Fatal error occurred, no output PDF file produced!

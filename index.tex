@@ -213,7 +213,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, frame hidden, breakable, boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, sharp corners]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt, sharp corners, breakable, interior hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -245,8 +245,17 @@ estancia en el Programa de Maestría en Ciencias Químicas.
 \hypertarget{introducciuxf3n}{%
 \chapter{Introducción}\label{introducciuxf3n}}
 
-La Química Cuántica es un área donde se conjuntan \ldots{} Esta tiene un
-gran potencial pues para su aplicación se conjuntan\ldots{}
+Uno de los grandes propósitos de la Química Cuántica es describir varias
+propiedades físicas y químicas de molélculas y materiales de una forma
+sistemática. Su impacto ha crecido a la par de los avances teóricos,
+matemáticos y computacionales, permitiendo el estudio de sistemas cada
+vez más grandes. (ver Wu and Su 2023)
+
+El avance en el desarrollo de diferentes métodos empleados en la química
+cuántica, especialmente en la Teoría de los Funcionales de la Densidad
+(DFT), ha permitido la realización de cálculos cuya precisión es
+comparable a resultados obtenidos en experimentos (ver Tu and Laaksonen
+2010).
 
 \bookmarksetup{startatroot}
 
@@ -698,7 +707,7 @@ funcional de la densidad del estado basal \(n_0(\textbf{r})\) (ver
 Martin 2008). A continuación, se presentan tres ejemplos del cálculo de
 propiedades de diferentes sistemas utilizando GPAW, una librería de
 Python basada en DFT, el método PAW y el ambiente de simulación atómica
-ASE (ver dtu 2023).
+ASE (ver gpaw 2023).
 
 \hypertarget{anuxe1lisis-de-cargas}{%
 \section{Análisis de cargas}\label{anuxe1lisis-de-cargas}}
@@ -744,7 +753,7 @@ https://colab.research.google.com/drive/19Ur1K-oclYn760U0xKHxotvf59xvMNbN?usp=sh
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
 \leavevmode\vadjust pre{\hypertarget{ref-GPAW_2023}{}}%
-dtu. 2023. \emph{GPAW: DFT and Beyond Within the Projector-Augmented
+gpaw. 2023. \emph{GPAW: DFT and Beyond Within the Projector-Augmented
 Wave Method - GPAW}. \url{https://wiki.fysik.dtu.dk/gpaw/}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Hirshfeld1977}{}}%
@@ -755,6 +764,20 @@ Charge Densities.''} \emph{Theoretica Chimica Acta} 44 (2): 129--38.
 \leavevmode\vadjust pre{\hypertarget{ref-Martin2008-gc}{}}%
 Martin, Richard M. 2008. \emph{Electronic Structure: Basic Theory and
 Practical Methods}. Cambridge University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-TU20101}{}}%
+Tu, Yaoquan, and Aatto Laaksonen. 2010. {``Chapter 1 - Implementing
+Quantum Mechanics into Molecular Mechanics---Combined QM/MM Modeling
+Methods.''} In \emph{Combining Quantum Mechanics and Molecular
+Mechanics. Some Recent Progresses in QM/MM Methods}, edited by John R.
+Sabin and Erkki Brändas, 59:1--15. Advances in Quantum Chemistry.
+Academic Press.
+https://doi.org/\url{https://doi.org/10.1016/S0065-3276(10)59001-4}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Wu_Su_2023}{}}%
+Wu, Xun, and Peifeng Su. 2023. {``Very Brief Introduction to Quantum
+Chemistry.''} \emph{Quantum Chemistry in the Age of Machine Learning},
+3--25. \url{https://doi.org/10.1016/b978-0-323-90049-2.00006-8}.
 
 \end{CSLReferences}
 

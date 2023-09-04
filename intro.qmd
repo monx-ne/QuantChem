@@ -1,5 +1,8 @@
 # Introducción
 
-La Química Cuántica es un área donde se conjuntan ...
-Esta tiene un gran potencial pues para su aplicación se conjuntan...
 
+Uno de los grandes propósitos de la Química Cuántica es describir varias propiedades físicas y químicas de molélculas y materiales
+de una forma sistemática. Su impacto ha crecido a la par de los avances teóricos, matemáticos y computacionales, permitiendo el estudio de sistemas cada vez más grandes.
+[ver @Wu_Su_2023]
+
+El avance en el desarrollo de diferentes métodos empleados en la química cuántica, especialmente en la Teoría de los Funcionales de la Densidad (DFT), ha permitido la realización de cálculos cuya precisión es comparable a resultados obtenidos en experimentos [ver @TU20101].
