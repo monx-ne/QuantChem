@@ -213,7 +213,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, frame hidden, enhanced, sharp corners, breakable, interior hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, sharp corners, boxrule=0pt, breakable, borderline west={3pt}{0pt}{shadecolor}, frame hidden, interior hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -1185,14 +1185,24 @@ librería GPAW.
 \addcontentsline{toc}{section}{Orbitales moleculares}
 
 Los orbitales moleculares son el producto de una combinación lineal de
-orbitales atómicos. Estos se obtienen mediante la adición o substracción
-de las ecuaciones
+los orbitales atómicos de los átomos en una molécula, lo que representa
+la distribución electrónica entre dos o más átomos. Estos se obtienen
+mediante la adición o substracción de las funciones de onda que forman
+la molécula. En este enfoque, se visualiza a los electrones llenando los
+orbitale smoleculares uno por uno como sucede en los orbitales atómicos.
+Esa teoría explica la formación de enlaces a través de la ocupación de
+orbitales elecgrónicos caraterístico de la molécula (ver Moeller et al.
+1980).
 
-\hypertarget{estructura-de-bandas-y-anuxe1lisis-de-hibridaciuxf3n-de-orbitales}{%
-\section*{Estructura de bandas y análisis de hibridación de
-orbitales}\label{estructura-de-bandas-y-anuxe1lisis-de-hibridaciuxf3n-de-orbitales}}
-\addcontentsline{toc}{section}{Estructura de bandas y análisis de
-hibridación de orbitales}
+\hypertarget{estructura-de-bandas}{%
+\section*{Estructura de bandas}\label{estructura-de-bandas}}
+\addcontentsline{toc}{section}{Estructura de bandas}
+
+La estructura de bandas representa los niveles de energía de un sólido,
+y usualmente de utiliza para determinar si un material es conductor,
+semiconductor o aislante (ver Fatima et al. 2023). Esta estructura de
+bandas puede ser calculada utilizando diferentes aproximaciones, con sus
+respectivos beneficios y desventajas, como lo es el método de DFT.
 
 \hypertarget{anuxe1lisis-de-cargas-en-hcn}{%
 \chapter{Análisis de cargas en HCN}\label{anuxe1lisis-de-cargas-en-hcn}}
@@ -1688,59 +1698,6 @@ https://wiki.fysik.dtu.dk/gpaw/install.html
 \end{Highlighting}
 \end{Shaded}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{nbands }\OperatorTok{=} \DecValTok{14}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{emin }\OperatorTok{=} \OperatorTok{{-}}\DecValTok{20}
-\NormalTok{emax }\OperatorTok{=} \DecValTok{15}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{plt.figure(figsize}\OperatorTok{=}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{10}\NormalTok{))}
-\ControlFlowTok{for}\NormalTok{ n }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(nbands):}
-    \CommentTok{\#plt.plot(x, e\_kn[:, n],\textquotesingle{}b{-}\textquotesingle{})}
-\NormalTok{    plt.scatter(x,e\_kn[:,n], s}\OperatorTok{=}\NormalTok{fkni2\_Cs[:,n]}\OperatorTok{*}\DecValTok{100}\NormalTok{, c}\OperatorTok{=}\StringTok{\textquotesingle{}y\textquotesingle{}}\NormalTok{, alpha}\OperatorTok{=}\FloatTok{0.5}\NormalTok{,linewidth}\OperatorTok{=}\DecValTok{0}\NormalTok{)}
-\NormalTok{    plt.scatter(x,e\_kn[:,n], s}\OperatorTok{=}\NormalTok{fkni2\_Cpx[:,n]}\OperatorTok{*}\DecValTok{100}\NormalTok{, c}\OperatorTok{=}\StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, alpha}\OperatorTok{=}\FloatTok{0.5}\NormalTok{,linewidth}\OperatorTok{=}\DecValTok{0}\NormalTok{)}
-\NormalTok{    plt.scatter(x,e\_kn[:,n], s}\OperatorTok{=}\NormalTok{fkni2\_Cpy[:,n]}\OperatorTok{*}\DecValTok{100}\NormalTok{, c}\OperatorTok{=}\StringTok{\textquotesingle{}g\textquotesingle{}}\NormalTok{, alpha}\OperatorTok{=}\FloatTok{0.5}\NormalTok{,linewidth}\OperatorTok{=}\DecValTok{0}\NormalTok{)}
-\NormalTok{    plt.scatter(x,e\_kn[:,n], s}\OperatorTok{=}\NormalTok{fkni2\_Cpz[:,n]}\OperatorTok{*}\DecValTok{100}\NormalTok{, c}\OperatorTok{=}\StringTok{\textquotesingle{}r\textquotesingle{}}\NormalTok{, alpha}\OperatorTok{=}\FloatTok{0.5}\NormalTok{,linewidth}\OperatorTok{=}\DecValTok{0}\NormalTok{)}
-
-\NormalTok{plt.scatter(}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,e\_kn[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{], s}\OperatorTok{=}\DecValTok{50}\NormalTok{, c}\OperatorTok{=}\StringTok{\textquotesingle{}y\textquotesingle{}}\NormalTok{, alpha}\OperatorTok{=}\FloatTok{0.5}\NormalTok{,linewidth}\OperatorTok{=}\DecValTok{0}\NormalTok{,label}\OperatorTok{=}\StringTok{\textquotesingle{}C $s$\textquotesingle{}}\NormalTok{)}
-\NormalTok{plt.scatter(}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,e\_kn[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{], s}\OperatorTok{=}\DecValTok{50}\NormalTok{, c}\OperatorTok{=}\StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, alpha}\OperatorTok{=}\FloatTok{0.5}\NormalTok{,linewidth}\OperatorTok{=}\DecValTok{0}\NormalTok{,label}\OperatorTok{=}\StringTok{\textquotesingle{}C $p\_x$\textquotesingle{}}\NormalTok{)}
-\NormalTok{plt.scatter(}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,e\_kn[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{], s}\OperatorTok{=}\DecValTok{50}\NormalTok{, c}\OperatorTok{=}\StringTok{\textquotesingle{}g\textquotesingle{}}\NormalTok{, alpha}\OperatorTok{=}\FloatTok{0.5}\NormalTok{,linewidth}\OperatorTok{=}\DecValTok{0}\NormalTok{,label}\OperatorTok{=}\StringTok{\textquotesingle{}C $p\_y$\textquotesingle{}}\NormalTok{)}
-\NormalTok{plt.scatter(}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,e\_kn[}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{], s}\OperatorTok{=}\DecValTok{50}\NormalTok{, c}\OperatorTok{=}\StringTok{\textquotesingle{}r\textquotesingle{}}\NormalTok{, alpha}\OperatorTok{=}\FloatTok{0.5}\NormalTok{,linewidth}\OperatorTok{=}\DecValTok{0}\NormalTok{,label}\OperatorTok{=}\StringTok{\textquotesingle{}C $p\_z$\textquotesingle{}}\NormalTok{)}
-
-\CommentTok{\#for p in XX:}
-\CommentTok{\#    plt.plot([p, p], [emin, emax], \textquotesingle{}k{-}\textquotesingle{})}
-\CommentTok{\#plt.plot([0, XX[{-}1]], [0, 0], \textquotesingle{}k{-}\textquotesingle{})}
-\NormalTok{plt.legend(fontsize}\OperatorTok{=}\DecValTok{12}\NormalTok{)}
-\CommentTok{\#plt.xticks(XX, [\textquotesingle{}$\%s$\textquotesingle{} \% n for n in [r\textquotesingle{}\textbackslash{}Gamma\textquotesingle{}, \textquotesingle{}K\textquotesingle{}, \textquotesingle{}M\textquotesingle{},r\textquotesingle{}\textbackslash{}Gamma\textquotesingle{}]])}
-\NormalTok{plt.axis(xmin}\OperatorTok{=}\DecValTok{0}\NormalTok{, xmax}\OperatorTok{=}\NormalTok{XX[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{], ymin}\OperatorTok{={-}}\DecValTok{20}\NormalTok{, ymax}\OperatorTok{=}\DecValTok{10}\NormalTok{)}
-\NormalTok{plt.rcParams[}\StringTok{\textquotesingle{}font.size\textquotesingle{}}\NormalTok{]}\OperatorTok{=}\DecValTok{14}
-\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}k{-}vector\textquotesingle{}}\NormalTok{)}
-\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Energy (eV)\textquotesingle{}}\NormalTok{)}
-\CommentTok{\#plt.ylim(({-}20,15))}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-ValueError: ignored
-\end{verbatim}
-
-\begin{figure}[H]
-
-{\centering \includegraphics{./QuantChem_DFT_EstBandyHib_files/figure-pdf/cell-15-output-2.png}
-
-}
-
-\end{figure}
-
 \bookmarksetup{startatroot}
 
 \hypertarget{references}{%
@@ -1749,6 +1706,13 @@ ValueError: ignored
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-FATIMA20233}{}}%
+Fatima, Yangchao Liao, Sara A. Tolba, Luis Alberto Ruiz Pestana, and
+Wenjie Xia. 2023. {``Chapter One - Electronic Structure and Density
+Functional Theory.''} In \emph{Fundamentals of Multiscale Modeling of
+Structural Materials}, edited by Wenjie Xia and Luis Alberto Ruiz
+Pestana, 3--35. Elsevier.
+
 \leavevmode\vadjust pre{\hypertarget{ref-GPAW_2023}{}}%
 gpaw. 2023. \emph{GPAW: DFT and Beyond Within the Projector-Augmented
 Wave Method - GPAW}. \url{https://wiki.fysik.dtu.dk/gpaw/}.
@@ -1761,6 +1725,13 @@ Charge Densities.''} \emph{Theoretica Chimica Acta} 44 (2): 129--38.
 \leavevmode\vadjust pre{\hypertarget{ref-Martin2008-gc}{}}%
 Martin, Richard M. 2008. \emph{Electronic Structure: Basic Theory and
 Practical Methods}. Cambridge University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-MOELLER1980635}{}}%
+Moeller, Therald, John C. Bailar, Jacob Kleinberg, Cyrus O. Guss, Mary
+E. Castellion, and Clyde Metz. 1980. {``21 - THE COVALENT BOND
+REEXAMINED.''} In \emph{Chemistry}, edited by Therald Moeller, John C.
+Bailar, Jacob Kleinberg, Cyrus O. Guss, Mary E. Castellion, and Clyde
+Metz, 635--58. Academic Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-TU20101}{}}%
 Tu, Yaoquan, and Aatto Laaksonen. 2010. {``Chapter 1 - Implementing

@@ -13,14 +13,17 @@ entre moléculas o partes de la misma molécula [ver @Hirshfeld1977].
 A continuación, se muestra un ejemplo de código para el análisis de carga para la molécula de HCN en el esquema de Hirshfeld utilizando la librería GPAW.
 
 
-{{< embed QuantChem_DFT-AnCarg.ipynb#fig-conv-hs >}}
+{{< embed QuantChem_DFT_AnCarg.ipynb#fig-conv-hs >}}
 
 
 ## Orbitales moleculares
 
-Los orbitales moleculares son el producto de una combinación lineal de orbitales atómicos. Estos se obtienen mediante la adición o substracción de las ecuaciones
+Los orbitales moleculares son el producto de una combinación lineal de los orbitales atómicos de los
+átomos en una  molécula, lo que representa la distribución electrónica entre dos o más átomos. Estos se obtienen mediante la adición o substracción de las funciones de onda que forman la molécula. En este enfoque, se visualiza a los electrones llenando los orbitale smoleculares uno por uno como sucede en los orbitales atómicos. Esa teoría explica la formación de enlaces a través de la ocupación de orbitales elecgrónicos caraterístico de la molécula [ver @MOELLER1980635]. 
 
 
+## Estructura de bandas
 
-## Estructura de bandas y análisis de hibridación de orbitales
+La estructura de bandas representa los niveles de energía de un sólido, y usualmente de utiliza para determinar si un material es conductor, semiconductor o aislante [ver @FATIMA20233]. Esta estructura de bandas puede ser calculada utilizando diferentes aproximaciones, con sus respectivos beneficios y desventajas, como lo es el método de DFT. 
+
 

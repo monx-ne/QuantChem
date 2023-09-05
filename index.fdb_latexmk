@@ -1,10 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1693866956 "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex" "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.pdf" "index" 1693866956
+["pdflatex"] 1693954647 "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex" "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.pdf" "index" 1693954647
   "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/./images/im11.png" 1693420087 79463 7791e36b79f7641ed3805a314a881d64 ""
   "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/./images/im22.png" 1693420087 246241 95b11c68af934b263e1639e9e66a55ea ""
-  "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.aux" 1693866956 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex" 1693866953 44007 5dc185a26caf44782ad8444d0ecd16d5 ""
-  "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.toc" 0 -1 0 "pdflatex"
+  "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.aux" 1693954647 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.tex" 1693954645 100941 7e44e3acfb7f3caa37814eb76614a6d9 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -225,5 +224,5 @@
   (generated)
   "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.pdf"
   "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.aux"
-  "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.log"
   "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.toc"
+  "/Users/monxne20/Documents/MaestríaPCQ/2023-2 TI/rep-gitpage/QuantChem/index.log"
