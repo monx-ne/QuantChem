@@ -213,7 +213,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, boxrule=0pt, sharp corners, breakable, interior hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, breakable, enhanced, borderline west={3pt}{0pt}{shadecolor}, interior hidden, frame hidden, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -732,6 +732,10 @@ librería GPAW.
 \hypertarget{orbitales-moleculares}{%
 \section{Orbitales moleculares}\label{orbitales-moleculares}}
 
+Los orbitales moleculares son el producto de una combinación lineal de
+orbitales atómicos. Estos se obtienen mediante la adición o substracción
+de las ecuaciones
+
 notebook-view: - notebook: QuantChem\_DFT-OM.ipynb title: ``Orbitale
 moleculares'' url:
 https://colab.research.google.com/drive/1ScEn-\_JFap2G\_YVkTGJeTCdOwuC3WVGy?usp=sharing
@@ -743,6 +747,264 @@ orbitales}\label{estructura-de-bandas-y-anuxe1lisis-de-hibridaciuxf3n-de-orbital
 notebook-view: - notebook: QuantChem\_DFT-EstBandyHib.ipynb title:
 ``Estructura de bandas e hibridación de orbitales'' url:
 https://colab.research.google.com/drive/19Ur1K-oclYn760U0xKHxotvf59xvMNbN?usp=sharing
+
+\bookmarksetup{startatroot}
+
+\hypertarget{anuxe1lisis-de-cargas-en-hcn}{%
+\chapter{Análisis de cargas en HCN}\label{anuxe1lisis-de-cargas-en-hcn}}
+
+Instalamos ASE y GPAW https://wiki.fysik.dtu.dk/ase/install.html
+https://wiki.fysik.dtu.dk/gpaw/install.html
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#(Instalación en terminal o Colab)}
+\OperatorTok{\%\%}\NormalTok{capture}
+\OperatorTok{!}\NormalTok{apt install python3}\OperatorTok{{-}}\NormalTok{mpi4py cython3 libxc}\OperatorTok{{-}}\NormalTok{dev gpaw}\OperatorTok{{-}}\NormalTok{data}
+\OperatorTok{!}\NormalTok{pip }\OperatorTok{{-}}\NormalTok{q install gpaw pymatgen}
+\end{Highlighting}
+\end{Shaded}
+
+Importamos bibliotecas
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ImportTok{from}\NormalTok{ ase.build }\ImportTok{import}\NormalTok{ molecule}
+\ImportTok{from}\NormalTok{ ase.io }\ImportTok{import}\NormalTok{ write}
+\ImportTok{from}\NormalTok{ ase.units }\ImportTok{import}\NormalTok{ Bohr}
+\ImportTok{from}\NormalTok{ gpaw }\ImportTok{import}\NormalTok{ GPAW}
+\ImportTok{from}\NormalTok{ gpaw.analyse.hirshfeld }\ImportTok{import}\NormalTok{ HirshfeldPartitioning}
+\ImportTok{import}\NormalTok{ numpy }\ImportTok{as}\NormalTok{ np}
+\ImportTok{import}\NormalTok{ time}
+\ImportTok{from}\NormalTok{ pylab }\ImportTok{import} \OperatorTok{*}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{convergencia-de-resoluciuxf3n-de-mallado}{%
+\section{Convergencia de resolución de
+mallado}\label{convergencia-de-resoluciuxf3n-de-mallado}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{hs}\OperatorTok{=}\NormalTok{[]}
+
+\NormalTok{a}\OperatorTok{=}\NormalTok{np.arange(}\FloatTok{0.09}\NormalTok{,}\FloatTok{0.4}\NormalTok{,}\FloatTok{0.07}\NormalTok{)}
+
+\ControlFlowTok{for}\NormalTok{ hi }\KeywordTok{in}\NormalTok{ np.sort(a)[::}\OperatorTok{{-}}\DecValTok{1}\NormalTok{]: }\CommentTok{\#eV}
+\NormalTok{    atoms }\OperatorTok{=}\NormalTok{ molecule (}\StringTok{\textquotesingle{}HCN\textquotesingle{}}\NormalTok{)}
+\NormalTok{    atoms.center(vacuum }\OperatorTok{=} \DecValTok{3}\NormalTok{)}
+\NormalTok{    atoms.calc }\OperatorTok{=}\NormalTok{ GPAW(h }\OperatorTok{=}\NormalTok{ hi, txt }\OperatorTok{=} \StringTok{\textquotesingle{}hcn.txt\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{    t0 }\OperatorTok{=}\NormalTok{ time.time()}
+\NormalTok{    energy }\OperatorTok{=}\NormalTok{ atoms.get\_potential\_energy()}
+\NormalTok{    t1 }\OperatorTok{=}\NormalTok{ time.time()}
+\NormalTok{    Etime }\OperatorTok{=}\NormalTok{ t1}\OperatorTok{{-}}\NormalTok{t0}
+\NormalTok{    hs.append([hi,energy])}
+    \BuiltInTok{print}\NormalTok{(hi, energy, Etime)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+0.37 6.552207926075329 5.487196445465088
+0.30000000000000004 -17.552860386515555 7.910893440246582
+0.23 -20.859763042195127 12.00173306465149
+0.16 -20.78823666191357 15.016490936279297
+0.09 -20.789649125297505 94.44020438194275
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{hs }\OperatorTok{=}\NormalTok{ np.array(hs)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering 
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plt.plot(hs[:,}\DecValTok{0}\NormalTok{],hs[:,}\DecValTok{1}\NormalTok{],}\StringTok{\textquotesingle{}o{-}\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot([}\FloatTok{0.1}\NormalTok{,}\DecValTok{1}\NormalTok{],[hs[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{],hs[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]],}\StringTok{\textquotesingle{}r{-}{-}\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot([}\FloatTok{0.1}\NormalTok{,}\DecValTok{1}\NormalTok{],[hs[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]}\OperatorTok{+}\FloatTok{0.001}\NormalTok{,hs[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]}\OperatorTok{+}\FloatTok{0.001}\NormalTok{],}\StringTok{\textquotesingle{}b{-}{-}\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot([}\FloatTok{0.1}\NormalTok{,}\DecValTok{1}\NormalTok{],[hs[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]}\OperatorTok{{-}}\FloatTok{0.001}\NormalTok{,hs[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]}\OperatorTok{{-}}\FloatTok{0.001}\NormalTok{],}\StringTok{\textquotesingle{}b{-}{-}\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Resolución de supercelda\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Energía [eV]\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering 
+
+\begin{verbatim}
+Text(0, 0.5, 'Energía [eV]')
+\end{verbatim}
+
+}
+
+\caption{Plot de convergencia}
+
+\end{figure}
+
+\begin{figure}[H]
+
+{\centering \includegraphics{./QuantChem_DFT_AnCarg_files/figure-pdf/fig-conv-hs-output-2.png}
+
+}
+
+\end{figure}
+
+}
+
+\caption{\label{fig-conv-hs}\textbf{?(caption)}}
+
+\end{figure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{hConv }\OperatorTok{=} \VariableTok{None}
+\NormalTok{delta }\OperatorTok{=} \FloatTok{1e{-}1} \CommentTok{\#Parámetro de convergencia}
+
+\ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\BuiltInTok{len}\NormalTok{(hs)):}
+\NormalTok{  g }\OperatorTok{=}\NormalTok{ np.gradient(hs,axis}\OperatorTok{=}\DecValTok{0}\NormalTok{)}
+  \ControlFlowTok{if} \BuiltInTok{abs}\NormalTok{(g[i][}\DecValTok{1}\NormalTok{]) }\OperatorTok{\textless{}}\NormalTok{ delta:}
+\NormalTok{    hConv }\OperatorTok{=}\NormalTok{ hs[i][}\DecValTok{0}\NormalTok{]}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{\textquotesingle{}El espaciado de la malla para la convergencia es\textquotesingle{}}\NormalTok{,hConv)}
+    \ControlFlowTok{break}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+El espaciado de la malla para la convergencia es 0.16
+\end{verbatim}
+
+\hypertarget{convergencia-del-tamauxf1o-de-la-supercelda}{%
+\section{Convergencia del tamaño de la
+supercelda}\label{convergencia-del-tamauxf1o-de-la-supercelda}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{vac}\OperatorTok{=}\NormalTok{[]}
+
+\ControlFlowTok{for}\NormalTok{ supercell }\KeywordTok{in}\NormalTok{ np.arange(}\DecValTok{3}\NormalTok{,}\DecValTok{13}\NormalTok{): }\CommentTok{\#eV}
+\NormalTok{    atoms }\OperatorTok{=}\NormalTok{ molecule (}\StringTok{\textquotesingle{}HCN\textquotesingle{}}\NormalTok{)}
+\NormalTok{    atoms.center(vacuum }\OperatorTok{=}\NormalTok{ supercell)}
+\NormalTok{    atoms.calc }\OperatorTok{=}\NormalTok{ GPAW(h }\OperatorTok{=}\NormalTok{ hConv, txt }\OperatorTok{=} \SpecialStringTok{f\textquotesingle{}hcn{-}}\SpecialCharTok{\{}\NormalTok{supercell}\SpecialCharTok{:d\}}\SpecialStringTok{.txt\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{    t0 }\OperatorTok{=}\NormalTok{ time.time()}
+\NormalTok{    energy }\OperatorTok{=}\NormalTok{ atoms.get\_potential\_energy()}
+\NormalTok{    t1 }\OperatorTok{=}\NormalTok{ time.time()}
+\NormalTok{    Etime }\OperatorTok{=}\NormalTok{ t1}\OperatorTok{{-}}\NormalTok{t0}
+\NormalTok{    vac.append([supercell,energy])}
+    \BuiltInTok{print}\NormalTok{(supercell, energy, Etime)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+3 -20.78823666191357 12.023082733154297
+4 -20.81830502357433 25.096040725708008
+5 -20.811299818567306 42.868160009384155
+6 -20.80775261527836 69.19943809509277
+7 -20.805840454589784 106.19662666320801
+8 -20.804225238824188 140.49988293647766
+9 -20.80317808391598 204.4915623664856
+10 -20.80236882889115 268.70350313186646
+11 -20.801889423630215 362.48192596435547
+12 -20.801920350966036 510.1052327156067
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{vac }\OperatorTok{=}\NormalTok{ np.array(vac)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{plt.plot(vac[:,}\DecValTok{0}\NormalTok{],vac[:,}\DecValTok{1}\NormalTok{],}\StringTok{\textquotesingle{}o{-}\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot([}\DecValTok{3}\NormalTok{,}\DecValTok{13}\NormalTok{],[vac[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{],vac[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]],}\StringTok{\textquotesingle{}r{-}{-}\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot([}\DecValTok{3}\NormalTok{,}\DecValTok{13}\NormalTok{],[vac[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]}\OperatorTok{+}\FloatTok{0.001}\NormalTok{,vac[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]}\OperatorTok{+}\FloatTok{0.001}\NormalTok{],}\StringTok{\textquotesingle{}b{-}{-}\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.plot([}\DecValTok{3}\NormalTok{,}\DecValTok{13}\NormalTok{],[vac[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]}\OperatorTok{{-}}\FloatTok{0.001}\NormalTok{,vac[}\OperatorTok{{-}}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{]}\OperatorTok{{-}}\FloatTok{0.001}\NormalTok{],}\StringTok{\textquotesingle{}b{-}{-}\textquotesingle{}}\NormalTok{)}
+
+\NormalTok{plt.xlabel(}\StringTok{\textquotesingle{}Tamaño de supercelda\textquotesingle{}}\NormalTok{)}
+\NormalTok{plt.ylabel(}\StringTok{\textquotesingle{}Energía [eV]\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Text(0, 0.5, 'Energía [eV]')
+\end{verbatim}
+
+\begin{figure}[H]
+
+{\centering \includegraphics{./QuantChem_DFT_AnCarg_files/figure-pdf/cell-10-output-2.png}
+
+}
+
+\end{figure}
+
+\hypertarget{calculo-de-energuxeda-y-cargas-con-paruxe1metros-convergidos}{%
+\section{Calculo de energía y cargas con parámetros
+convergidos}\label{calculo-de-energuxeda-y-cargas-con-paruxe1metros-convergidos}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{SCellConv }\OperatorTok{=} \VariableTok{None}
+\NormalTok{delta }\OperatorTok{=} \FloatTok{3e{-}4} \CommentTok{\#Parámetro de convergencia}
+
+\ControlFlowTok{for}\NormalTok{ i }\KeywordTok{in} \BuiltInTok{range}\NormalTok{(}\BuiltInTok{len}\NormalTok{(vac)):}
+\NormalTok{  g }\OperatorTok{=}\NormalTok{ np.gradient(vac,axis}\OperatorTok{=}\DecValTok{0}\NormalTok{)}
+  \CommentTok{\#print(g)}
+  \ControlFlowTok{if} \BuiltInTok{abs}\NormalTok{(g[i][}\DecValTok{1}\NormalTok{]) }\OperatorTok{\textless{}}\NormalTok{ delta:}
+\NormalTok{    SCellConv }\OperatorTok{=}\NormalTok{ vac[i][}\DecValTok{0}\NormalTok{]}
+    \BuiltInTok{print}\NormalTok{(}\StringTok{\textquotesingle{}El tamaño de la supercelda para la convergencia es\textquotesingle{}}\NormalTok{,SCellConv)}
+    \ControlFlowTok{break}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+El tamaño de la supercelda para la convergencia es 11.0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{atoms }\OperatorTok{=}\NormalTok{ molecule(}\StringTok{\textquotesingle{}HCN\textquotesingle{}}\NormalTok{)}
+\NormalTok{atoms.center(vacuum}\OperatorTok{=}\NormalTok{SCellConv)}
+\NormalTok{atoms.calc }\OperatorTok{=}\NormalTok{ GPAW(h}\OperatorTok{=}\NormalTok{hConv, txt}\OperatorTok{=}\StringTok{\textquotesingle{}hcn.txt\textquotesingle{}}\NormalTok{)}
+\NormalTok{atoms.get\_potential\_energy()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+-20.801889423630215
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Cargas de Hirshfeld}
+\NormalTok{hf }\OperatorTok{=}\NormalTok{ HirshfeldPartitioning(atoms.calc)}
+\ControlFlowTok{for}\NormalTok{ atom, charge }\KeywordTok{in} \BuiltInTok{zip}\NormalTok{(atoms, hf.get\_charges()):}
+\NormalTok{    atom.charge }\OperatorTok{=}\NormalTok{ charge}
+    \BuiltInTok{print}\NormalTok{ (charge)}
+
+\NormalTok{atoms.copy().write(}\StringTok{\textquotesingle{}Hirshfeld.traj\textquotesingle{}}\NormalTok{)}
+
+\CommentTok{\# Crear Densidad electrónica y escribir}
+\NormalTok{rho }\OperatorTok{=}\NormalTok{ atoms.calc.get\_all\_electron\_density(gridrefinement}\OperatorTok{=}\DecValTok{4}\NormalTok{)}
+\NormalTok{write(}\StringTok{\textquotesingle{}density.cube\textquotesingle{}}\NormalTok{, atoms, data}\OperatorTok{=}\NormalTok{rho }\OperatorTok{*}\NormalTok{ Bohr}\OperatorTok{**}\DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+0.04359468562323254
+-0.17510036425308595
+0.13217884839219185
+\end{verbatim}
+
+Si leemos el documento density.cube en VESTA, obsarevamos la siguiente
+imagen:
 
 \bookmarksetup{startatroot}
 

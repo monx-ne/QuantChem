@@ -11,10 +11,11 @@ book:
     - intro.qmd
     - H-F.qmd
     - DFT.qmd
+    - QuantChem_DFT_AnCarg.ipynb
     - references.qmd
 
 notebook-view:
-  - notebook: QuantChem_DFT-AnCarg.ipynb
+  - notebook: QuantChem_DFT_AnCarg.ipynb
     title: "Análisis de carga"
     url: https://colab.research.google.com/drive/1-z-jSt-XKtAPTwUHWgcmdKWHyCoMr_lF?usp=sharing
 
@@ -25,6 +26,4 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
-
-
 

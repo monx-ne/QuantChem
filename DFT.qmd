@@ -18,6 +18,8 @@ A continuación, se muestra un ejemplo de código para el análisis de carga par
 
 ## Orbitales moleculares
 
+Los orbitales moleculares son el producto de una combinación lineal de orbitales atómicos. Estos se obtienen mediante la adición o substracción de las ecuaciones
+
 notebook-view:
   - notebook: QuantChem_DFT-OM.ipynb
     title: "Orbitale moleculares"
