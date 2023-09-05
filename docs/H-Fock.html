@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Temas selectos de Química Cuántica - Método de Hartree-Fock</title>
+<title>Temas selectos de Química Cuántica - 2&nbsp; Método de Hartree-Fock</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,8 +93,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./H-Fock.html" rel="next">
-<link href="./intro.html" rel="prev">
+<link href="./DFT.html" rel="next">
+<link href="./H-F.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -134,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Método de Hartree-Fock</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Método de Hartree-Fock</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -169,7 +169,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./H-F.html" class="sidebar-item-text sidebar-link active">Método de Hartree-Fock</a>
+            <a href="./H-F.html" class="sidebar-item-text sidebar-link">Método de Hartree-Fock</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -177,7 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./H-Fock.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Método de Hartree-Fock</span></a>
+  <a href="./H-Fock.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Método de Hartree-Fock</span></a>
   </div>
 </li>
       </ul>
@@ -221,13 +221,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#definir-sistema-de-estudio-y-base" id="toc-definir-sistema-de-estudio-y-base" class="nav-link active" data-scroll-target="#definir-sistema-de-estudio-y-base">Definir sistema de estudio y base</a></li>
-  <li><a href="#definir-integrales" id="toc-definir-integrales" class="nav-link" data-scroll-target="#definir-integrales">Definir integrales</a></li>
-  <li><a href="#calcular-matriz-de-fock-textbff" id="toc-calcular-matriz-de-fock-textbff" class="nav-link" data-scroll-target="#calcular-matriz-de-fock-textbff">Calcular matriz de Fock <span class="math inline">\(\textbf{F}\)</span></a></li>
-  <li><a href="#transformar-textbff-a-matriz-textbff" id="toc-transformar-textbff-a-matriz-textbff" class="nav-link" data-scroll-target="#transformar-textbff-a-matriz-textbff">Transformar <span class="math inline">\(\textbf{F}\)</span> a matriz <span class="math inline">\(\textbf{F}'\)</span></a></li>
-  <li><a href="#diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc" id="toc-diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc" class="nav-link" data-scroll-target="#diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc">Diagonalizar matriz <span class="math inline">\(\textbf{F}'\)</span> para obtener <span class="math inline">\(\pmb{\epsilon}\)</span> y <span class="math inline">\(\textbf{C}'\)</span></a></li>
-  <li><a href="#transformar-textbfc-a-textbfc" id="toc-transformar-textbfc-a-textbfc" class="nav-link" data-scroll-target="#transformar-textbfc-a-textbfc">Transformar <span class="math inline">\(\textbf{C}'\)</span> a <span class="math inline">\(\textbf{C}\)</span></a></li>
-  <li><a href="#comparar-parámetros-para-revisar-convergencia" id="toc-comparar-parámetros-para-revisar-convergencia" class="nav-link" data-scroll-target="#comparar-parámetros-para-revisar-convergencia">Comparar parámetros para revisar convergencia</a></li>
+  <li><a href="#definir-sistema-de-estudio-y-base" id="toc-definir-sistema-de-estudio-y-base" class="nav-link active" data-scroll-target="#definir-sistema-de-estudio-y-base"><span class="toc-section-number">2.0.1</span>  Definir sistema de estudio y base</a></li>
+  <li><a href="#definir-integrales" id="toc-definir-integrales" class="nav-link" data-scroll-target="#definir-integrales"><span class="toc-section-number">2.0.2</span>  Definir integrales</a></li>
+  <li><a href="#calcular-matriz-de-fock-textbff" id="toc-calcular-matriz-de-fock-textbff" class="nav-link" data-scroll-target="#calcular-matriz-de-fock-textbff"><span class="toc-section-number">2.0.3</span>  Calcular matriz de Fock <span class="math inline">\(\textbf{F}\)</span></a></li>
+  <li><a href="#transformar-textbff-a-matriz-textbff" id="toc-transformar-textbff-a-matriz-textbff" class="nav-link" data-scroll-target="#transformar-textbff-a-matriz-textbff"><span class="toc-section-number">2.0.4</span>  Transformar <span class="math inline">\(\textbf{F}\)</span> a matriz <span class="math inline">\(\textbf{F}'\)</span></a></li>
+  <li><a href="#diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc" id="toc-diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc" class="nav-link" data-scroll-target="#diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc"><span class="toc-section-number">2.0.5</span>  Diagonalizar matriz <span class="math inline">\(\textbf{F}'\)</span> para obtener <span class="math inline">\(\pmb{\epsilon}\)</span> y <span class="math inline">\(\textbf{C}'\)</span></a></li>
+  <li><a href="#transformar-textbfc-a-textbfc" id="toc-transformar-textbfc-a-textbfc" class="nav-link" data-scroll-target="#transformar-textbfc-a-textbfc"><span class="toc-section-number">2.0.6</span>  Transformar <span class="math inline">\(\textbf{C}'\)</span> a <span class="math inline">\(\textbf{C}\)</span></a></li>
+  <li><a href="#comparar-parámetros-para-revisar-convergencia" id="toc-comparar-parámetros-para-revisar-convergencia" class="nav-link" data-scroll-target="#comparar-parámetros-para-revisar-convergencia"><span class="toc-section-number">2.0.7</span>  Comparar parámetros para revisar convergencia</a></li>
   </ul>
 </nav>
     </div>
@@ -236,7 +236,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Método de Hartree-Fock</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Método de Hartree-Fock</span></h1>
 </div>
 
 
@@ -258,8 +258,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p></p><figcaption class="figure-caption">1</figcaption><p></p>
 </figure>
 </div>
-<section id="definir-sistema-de-estudio-y-base" class="level3">
-<h3 class="anchored" data-anchor-id="definir-sistema-de-estudio-y-base">Definir sistema de estudio y base</h3>
+<section id="definir-sistema-de-estudio-y-base" class="level3" data-number="2.0.1">
+<h3 data-number="2.0.1" class="anchored" data-anchor-id="definir-sistema-de-estudio-y-base"><span class="header-section-number">2.0.1</span> Definir sistema de estudio y base</h3>
 <p>El presente proyecto se realizó bajo el sistema de referencia: <img src="images/im11.png" class="img-fluid" alt="1"></p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -297,10 +297,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>ds<span class="op">=</span> [dH,dHe]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="definir-integrales" class="level3">
-<h3 class="anchored" data-anchor-id="definir-integrales">Definir integrales</h3>
-<section id="integrales-de-traslape-s_mu-nu" class="level4">
-<h4 class="anchored" data-anchor-id="integrales-de-traslape-s_mu-nu">Integrales de traslape <span class="math inline">\(S_{\mu \nu}\)</span></h4>
+<section id="definir-integrales" class="level3" data-number="2.0.2">
+<h3 data-number="2.0.2" class="anchored" data-anchor-id="definir-integrales"><span class="header-section-number">2.0.2</span> Definir integrales</h3>
+<section id="integrales-de-traslape-s_mu-nu" class="level4" data-number="2.0.2.1">
+<h4 data-number="2.0.2.1" class="anchored" data-anchor-id="integrales-de-traslape-s_mu-nu"><span class="header-section-number">2.0.2.1</span> Integrales de traslape <span class="math inline">\(S_{\mu \nu}\)</span></h4>
 <p>La integral de traslape para el orbital 1s de H (<span class="math inline">\(\mu\)</span>) y el orbital 1s de He (<span class="math inline">\(\nu\)</span>) está definida como:</p>
 <p>$_{} = ^{CGF *}<em>{} ^{CGF}</em>{} $</p>
 <p>Siendo cada elemento <span class="math inline">\(S_{\mu\nu}\)</span> el ya calculado en la ecuación (A9) de [4]:</p>
@@ -325,13 +325,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </section>
-<section id="definir-hathcore_mu-nu" class="level4">
-<h4 class="anchored" data-anchor-id="definir-hathcore_mu-nu">Definir <span class="math inline">\(\hat{H}^{core}_{\mu \nu}\)</span></h4>
+<section id="definir-hathcore_mu-nu" class="level4" data-number="2.0.2.2">
+<h4 data-number="2.0.2.2" class="anchored" data-anchor-id="definir-hathcore_mu-nu"><span class="header-section-number">2.0.2.2</span> Definir <span class="math inline">\(\hat{H}^{core}_{\mu \nu}\)</span></h4>
 <p>El <span class="math inline">\(\hat{H}^{core}_{\mu \nu}\)</span> puede definirse como:</p>
 <p><span class="math inline">\(\hat{H}^{core}_{\mu \nu} = \textbf{T}_{\mu \nu} + \textbf{V}^{nucH}_{\mu \nu} + \textbf{V}^{nucHe}_{\mu \nu}\)</span></p>
 <p>donde <span class="math inline">\(\textbf{T}_{\mu \nu}\)</span> es la matriz de la energía cinética de un electrón y <span class="math inline">\(\textbf{V}^{nucC}_{\mu \nu}\)</span> es la matriz correspondiente al potencial de atracción entre un electrón y el núcleo <span class="math inline">\(C\)</span>. Cada término es calculado de manera similar a <span class="math inline">\(\mathbf{S}_{\mu \nu}\)</span>, siendo los correspondientes términos <span class="math inline">\(T_{pq}\)</span>, <span class="math inline">\(V^H_{pq}\)</span> y <span class="math inline">\(V^{He}_{pq}\)</span> aquellos calculados en (A11) y (A33) en [4].</p>
-<section id="integral-de-energía-cinética-de-un-electrón-t_mu-nu" class="level5">
-<h5 class="anchored" data-anchor-id="integral-de-energía-cinética-de-un-electrón-t_mu-nu">Integral de energía cinética de un electrón <span class="math inline">\(T_{\mu \nu}\)</span></h5>
+<section id="integral-de-energía-cinética-de-un-electrón-t_mu-nu" class="level5" data-number="2.0.2.2.1">
+<h5 data-number="2.0.2.2.1" class="anchored" data-anchor-id="integral-de-energía-cinética-de-un-electrón-t_mu-nu"><span class="header-section-number">2.0.2.2.1</span> Integral de energía cinética de un electrón <span class="math inline">\(T_{\mu \nu}\)</span></h5>
 <div class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>T <span class="op">=</span> zeros((dim,dim))</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -351,8 +351,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </section>
-<section id="integrales-de-energía-potencial-de-un-electrón-y-un-núcleo-vnuc_mu-nu" class="level5">
-<h5 class="anchored" data-anchor-id="integrales-de-energía-potencial-de-un-electrón-y-un-núcleo-vnuc_mu-nu">Integrales de energía potencial de un electrón y un núcleo <span class="math inline">\(V^{nuc}_{\mu \nu}\)</span></h5>
+<section id="integrales-de-energía-potencial-de-un-electrón-y-un-núcleo-vnuc_mu-nu" class="level5" data-number="2.0.2.2.2">
+<h5 data-number="2.0.2.2.2" class="anchored" data-anchor-id="integrales-de-energía-potencial-de-un-electrón-y-un-núcleo-vnuc_mu-nu"><span class="header-section-number">2.0.2.2.2</span> Integrales de energía potencial de un electrón y un núcleo <span class="math inline">\(V^{nuc}_{\mu \nu}\)</span></h5>
 <div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">###Definición de funciones F_0 y Rp como se realiza en [6]</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> F0(t):</span>
@@ -416,8 +416,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </section>
 </section>
-<section id="integrales-de-2-electrones-vee_mu-nu-sigma-lambda" class="level4">
-<h4 class="anchored" data-anchor-id="integrales-de-2-electrones-vee_mu-nu-sigma-lambda">Integrales de 2 electrones <span class="math inline">\(V^{ee}_{\mu \nu \sigma \lambda}\)</span></h4>
+<section id="integrales-de-2-electrones-vee_mu-nu-sigma-lambda" class="level4" data-number="2.0.2.3">
+<h4 data-number="2.0.2.3" class="anchored" data-anchor-id="integrales-de-2-electrones-vee_mu-nu-sigma-lambda"><span class="header-section-number">2.0.2.3</span> Integrales de 2 electrones <span class="math inline">\(V^{ee}_{\mu \nu \sigma \lambda}\)</span></h4>
 <div class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Integrales de dos electrones reportadas en [3]</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>Vee <span class="op">=</span> zeros((dim,dim,dim,dim))</span>
@@ -441,8 +441,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </section>
 </section>
-<section id="calcular-matriz-de-fock-textbff" class="level3">
-<h3 class="anchored" data-anchor-id="calcular-matriz-de-fock-textbff">Calcular matriz de Fock <span class="math inline">\(\textbf{F}\)</span></h3>
+<section id="calcular-matriz-de-fock-textbff" class="level3" data-number="2.0.3">
+<h3 data-number="2.0.3" class="anchored" data-anchor-id="calcular-matriz-de-fock-textbff"><span class="header-section-number">2.0.3</span> Calcular matriz de Fock <span class="math inline">\(\textbf{F}\)</span></h3>
 <div class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Proponer C_i para construcción de P</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Construir la matriz de densidad P a partir de C</span></span>
@@ -483,14 +483,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>F0 <span class="op">=</span> Hcore <span class="op">+</span> G0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="transformar-textbff-a-matriz-textbff" class="level3">
-<h3 class="anchored" data-anchor-id="transformar-textbff-a-matriz-textbff">Transformar <span class="math inline">\(\textbf{F}\)</span> a matriz <span class="math inline">\(\textbf{F}'\)</span></h3>
+<section id="transformar-textbff-a-matriz-textbff" class="level3" data-number="2.0.4">
+<h3 data-number="2.0.4" class="anchored" data-anchor-id="transformar-textbff-a-matriz-textbff"><span class="header-section-number">2.0.4</span> Transformar <span class="math inline">\(\textbf{F}\)</span> a matriz <span class="math inline">\(\textbf{F}'\)</span></h3>
 <div class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>F0p <span class="op">=</span> X<span class="op">*</span>F0<span class="op">*</span>X</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc" class="level3">
-<h3 class="anchored" data-anchor-id="diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc">Diagonalizar matriz <span class="math inline">\(\textbf{F}'\)</span> para obtener <span class="math inline">\(\pmb{\epsilon}\)</span> y <span class="math inline">\(\textbf{C}'\)</span></h3>
+<section id="diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc" class="level3" data-number="2.0.5">
+<h3 data-number="2.0.5" class="anchored" data-anchor-id="diagonalizar-matriz-textbff-para-obtener-pmbepsilon-y-textbfc"><span class="header-section-number">2.0.5</span> Diagonalizar matriz <span class="math inline">\(\textbf{F}'\)</span> para obtener <span class="math inline">\(\pmb{\epsilon}\)</span> y <span class="math inline">\(\textbf{C}'\)</span></h3>
 <div class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>eigvalF0p,eigvecF0p <span class="op">=</span> linalg.eig(F0p)</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>ϵ <span class="op">=</span> diag(eigvalF0p)</span>
@@ -499,14 +499,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>Cpm1<span class="op">=</span>inv(Cp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="transformar-textbfc-a-textbfc" class="level3">
-<h3 class="anchored" data-anchor-id="transformar-textbfc-a-textbfc">Transformar <span class="math inline">\(\textbf{C}'\)</span> a <span class="math inline">\(\textbf{C}\)</span></h3>
+<section id="transformar-textbfc-a-textbfc" class="level3" data-number="2.0.6">
+<h3 data-number="2.0.6" class="anchored" data-anchor-id="transformar-textbfc-a-textbfc"><span class="header-section-number">2.0.6</span> Transformar <span class="math inline">\(\textbf{C}'\)</span> a <span class="math inline">\(\textbf{C}\)</span></h3>
 <div class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>C <span class="op">=</span> X<span class="op">*</span>Cp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="comparar-parámetros-para-revisar-convergencia" class="level3">
-<h3 class="anchored" data-anchor-id="comparar-parámetros-para-revisar-convergencia">Comparar parámetros para revisar convergencia</h3>
+<section id="comparar-parámetros-para-revisar-convergencia" class="level3" data-number="2.0.7">
+<h3 data-number="2.0.7" class="anchored" data-anchor-id="comparar-parámetros-para-revisar-convergencia"><span class="header-section-number">2.0.7</span> Comparar parámetros para revisar convergencia</h3>
 <p>A partir del paso 4, el procedimiento anterior se simplifica en un loop para buscar la convergencia:</p>
 <div class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>delta <span class="op">=</span> <span class="fl">0.0003</span> <span class="co">#parámetro para convergencia</span></span>
@@ -665,13 +665,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./intro.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span>
+      <a href="./H-F.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Método de Hartree-Fock</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./H-Fock.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Método de Hartree-Fock</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./DFT.html" class="pagination-link">
+        <span class="nav-page-text">Teoría de los funcionales de la densidad (DFT)</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

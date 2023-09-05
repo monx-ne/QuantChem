@@ -11,7 +11,7 @@ book:
     - intro.qmd
     - part: H-F.qmd
       chapters:
-      - H-F.ipynb
+      - H-Fock.ipynb
     - part: DFT.qmd
       chapters:
         - QuantChem_DFT_AnCarg.ipynb

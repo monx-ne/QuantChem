@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.3)  5 SEP 2023 16:17
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.5.3)  5 SEP 2023 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1407,36 +1407,40 @@ Class scrreprt Warning: \float@addtolists detected!
 [4
 
 ]
-chapter 2.
+part I.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 260.
+[5
+
+]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 271.
+(Font)              scaled to size 7.665pt on input line 268.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.475pt on input line 271.
+(Font)              scaled to size 5.475pt on input line 268.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95099pt on input line 271.
+(Font)              scaled to size 10.95099pt on input line 268.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.66568pt on input line 271.
+(Font)              scaled to size 7.66568pt on input line 268.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.4755pt on input line 271.
+(Font)              scaled to size 5.4755pt on input line 268.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 271.
+(Font)              scaled to size 10.94882pt on input line 268.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.66417pt on input line 271.
+(Font)              scaled to size 7.66417pt on input line 268.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.47441pt on input line 271.
+(Font)              scaled to size 5.47441pt on input line 268.
 File: ./images/im22.png Graphic file (type bmp)
 <./images/im22.png>
 File: ./images/im11.png Graphic file (type bmp)
 <./images/im11.png>
 
-Overfull \hbox (291.59082pt too wide) in paragraph at lines 289--291
+Overfull \hbox (291.59082pt too wide) in paragraph at lines 287--289
 \TU/lmr/m/n/10.95 El presente proyecto se realizó bajo el sistema de referencia
 : [] 
  []
 
-[5
-
-] [6]
+[6] [7]
 Missing character: There is no α (U+03B1) in font [lmmono10-regular]:!
 Missing character: There is no α (U+03B1) in font [lmmono10-regular]:!
 Missing character: There is no α (U+03B1) in font [lmmono10-regular]:!
@@ -1448,15 +1452,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.359 \$\mathbf{S}
+l.360 \$\mathbf{S}
                   \_\{\mu \nu\} = \int \mathrm{d} \mathbf{r} \phi\^{}\{CGF 
 Here is how much of TeX's memory you used:
- 36429 strings out of 476919
- 750076 string characters out of 5821841
- 1383749 words of memory out of 5000000
- 55856 multiletter control sequences out of 15000+600000
- 409877 words of font info for 79 fonts, out of 8000000 for 9000
+ 36454 strings out of 476919
+ 750822 string characters out of 5821841
+ 1384749 words of memory out of 5000000
+ 55880 multiletter control sequences out of 15000+600000
+ 409885 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 111i,7n,122p,10600b,915s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 111i,7n,122p,10600b,1018s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on index.pdf (6 pages).
+Output written on index.pdf (7 pages).
