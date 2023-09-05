@@ -9,15 +9,18 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - H-F.qmd
-    - DFT.qmd
-    - QuantChem_DFT_AnCarg.ipynb
+    - part: H-F.qmd
+      chapters:
+      - H-F.ipynb
+    - part: DFT.qmd
+      chapters:
+        - QuantChem_DFT_AnCarg.ipynb
+        - QuantChem_DFT_OM.ipynb
+        - QuantChem_DFT_EstBandyHib.ipynb
+
+
     - references.qmd
 
-notebook-view:
-  - notebook: QuantChem_DFT_AnCarg.ipynb
-    title: "Análisis de carga"
-    url: https://colab.research.google.com/drive/1-z-jSt-XKtAPTwUHWgcmdKWHyCoMr_lF?usp=sharing
 
 bibliography: references.bib
 

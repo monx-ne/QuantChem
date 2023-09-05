@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Temas selectos de Química Cuántica - 4&nbsp; Análisis de cargas en HCN</title>
+<title>Temas selectos de Química Cuántica - 3&nbsp; Análisis de cargas en HCN</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./QuantChem_DFT_OM.html" rel="next">
 <link href="./DFT.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -133,7 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -166,21 +166,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./H-F.html" class="sidebar-item-text sidebar-link">Método de Hartree-Fock</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./DFT.html" class="sidebar-item-text sidebar-link">Teoría de los funcionales de la densidad (DFT)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./H-F.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Método de Hartree-Fock</span></a>
+  <a href="./QuantChem_DFT_AnCarg.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./DFT.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Teoría de los funcionales de la densidad (DFT)</span></a>
+  <a href="./QuantChem_DFT_OM.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Orbitales moleculares de la piridina</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./QuantChem_DFT_AnCarg.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></a>
+  <a href="./QuantChem_DFT_EstBandyHib.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Estructura de bandas e hibridación de orbitales de Diamante (C)</span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
@@ -195,9 +215,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#convergencia-de-resolución-de-mallado" id="toc-convergencia-de-resolución-de-mallado" class="nav-link active" data-scroll-target="#convergencia-de-resolución-de-mallado"><span class="toc-section-number">4.1</span>  Convergencia de resolución de mallado</a></li>
-  <li><a href="#convergencia-del-tamaño-de-la-supercelda" id="toc-convergencia-del-tamaño-de-la-supercelda" class="nav-link" data-scroll-target="#convergencia-del-tamaño-de-la-supercelda"><span class="toc-section-number">4.2</span>  Convergencia del tamaño de la supercelda</a></li>
-  <li><a href="#calculo-de-energía-y-cargas-con-parámetros-convergidos" id="toc-calculo-de-energía-y-cargas-con-parámetros-convergidos" class="nav-link" data-scroll-target="#calculo-de-energía-y-cargas-con-parámetros-convergidos"><span class="toc-section-number">4.3</span>  Calculo de energía y cargas con parámetros convergidos</a></li>
+  <li><a href="#convergencia-de-resolución-de-mallado" id="toc-convergencia-de-resolución-de-mallado" class="nav-link active" data-scroll-target="#convergencia-de-resolución-de-mallado"><span class="toc-section-number">3.1</span>  Convergencia de resolución de mallado</a></li>
+  <li><a href="#convergencia-del-tamaño-de-la-supercelda" id="toc-convergencia-del-tamaño-de-la-supercelda" class="nav-link" data-scroll-target="#convergencia-del-tamaño-de-la-supercelda"><span class="toc-section-number">3.2</span>  Convergencia del tamaño de la supercelda</a></li>
+  <li><a href="#calculo-de-energía-y-cargas-con-parámetros-convergidos" id="toc-calculo-de-energía-y-cargas-con-parámetros-convergidos" class="nav-link" data-scroll-target="#calculo-de-energía-y-cargas-con-parámetros-convergidos"><span class="toc-section-number">3.3</span>  Calculo de energía y cargas con parámetros convergidos</a></li>
   </ul>
 </nav>
     </div>
@@ -206,7 +226,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></h1>
 </div>
 
 
@@ -238,8 +258,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pylab <span class="im">import</span> <span class="op">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="convergencia-de-resolución-de-mallado" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="convergencia-de-resolución-de-mallado"><span class="header-section-number">4.1</span> Convergencia de resolución de mallado</h2>
+<section id="convergencia-de-resolución-de-mallado" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="convergencia-de-resolución-de-mallado"><span class="header-section-number">3.1</span> Convergencia de resolución de mallado</h2>
 <div class="cell" data-outputid="9d975d25-20f1-4fd1-e263-2ab31f8e1f4d">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>hs<span class="op">=</span>[]</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -290,7 +310,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </figure>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;4.1: <strong>?(caption)</strong></figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.1: <strong>?(caption)</strong></figcaption><p></p>
 </figure>
 </div>
 <div class="cell" data-outputid="d5cae2fc-72df-4d15-b03a-b60699a84048">
@@ -308,8 +328,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </section>
-<section id="convergencia-del-tamaño-de-la-supercelda" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="convergencia-del-tamaño-de-la-supercelda"><span class="header-section-number">4.2</span> Convergencia del tamaño de la supercelda</h2>
+<section id="convergencia-del-tamaño-de-la-supercelda" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="convergencia-del-tamaño-de-la-supercelda"><span class="header-section-number">3.2</span> Convergencia del tamaño de la supercelda</h2>
 <div class="cell" data-outputid="760b18a8-c03d-4f6e-fc93-52acc6e2a437">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>vac<span class="op">=</span>[]</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -356,8 +376,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </section>
-<section id="calculo-de-energía-y-cargas-con-parámetros-convergidos" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="calculo-de-energía-y-cargas-con-parámetros-convergidos"><span class="header-section-number">4.3</span> Calculo de energía y cargas con parámetros convergidos</h2>
+<section id="calculo-de-energía-y-cargas-con-parámetros-convergidos" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="calculo-de-energía-y-cargas-con-parámetros-convergidos"><span class="header-section-number">3.3</span> Calculo de energía y cargas con parámetros convergidos</h2>
 <div class="cell" data-outputid="acb247aa-3a50-4c94-b9de-eb985e1a7d93">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>SCellConv <span class="op">=</span> <span class="va">None</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>delta <span class="op">=</span> <span class="fl">3e-4</span> <span class="co">#Parámetro de convergencia</span></span>
@@ -507,12 +527,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./DFT.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Teoría de los funcionales de la densidad (DFT)</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Teoría de los funcionales de la densidad (DFT)</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./QuantChem_DFT_OM.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Orbitales moleculares de la piridina</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

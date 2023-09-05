@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Temas selectos de Química Cuántica - 3&nbsp; Teoría de los funcionales de la densidad (DFT)</title>
+<title>Temas selectos de Química Cuántica - Teoría de los funcionales de la densidad (DFT)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./QuantChem_DFT_AnCarg.html" rel="next">
-<link href="./H-F.html" rel="prev">
+<link href="./H-F.ipynb" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -90,7 +90,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Teoría de los funcionales de la densidad (DFT)</span></h1>
+      <h1 class="quarto-secondary-nav-title">Teoría de los funcionales de la densidad (DFT)</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -123,21 +123,41 @@ div.csl-indent {
   <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./H-F.html" class="sidebar-item-text sidebar-link">Método de Hartree-Fock</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./DFT.html" class="sidebar-item-text sidebar-link active">Teoría de los funcionales de la densidad (DFT)</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./H-F.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Método de Hartree-Fock</span></a>
+  <a href="./QuantChem_DFT_AnCarg.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./DFT.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Teoría de los funcionales de la densidad (DFT)</span></a>
+  <a href="./QuantChem_DFT_OM.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Orbitales moleculares de la piridina</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./QuantChem_DFT_AnCarg.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></a>
+  <a href="./QuantChem_DFT_EstBandyHib.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Estructura de bandas e hibridación de orbitales de Diamante (C)</span></a>
   </div>
 </li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
@@ -152,9 +172,9 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#análisis-de-cargas" id="toc-análisis-de-cargas" class="nav-link active" data-scroll-target="#análisis-de-cargas"><span class="toc-section-number">3.1</span>  Análisis de cargas</a></li>
-  <li><a href="#orbitales-moleculares" id="toc-orbitales-moleculares" class="nav-link" data-scroll-target="#orbitales-moleculares"><span class="toc-section-number">3.2</span>  Orbitales moleculares</a></li>
-  <li><a href="#estructura-de-bandas-y-análisis-de-hibridación-de-orbitales" id="toc-estructura-de-bandas-y-análisis-de-hibridación-de-orbitales" class="nav-link" data-scroll-target="#estructura-de-bandas-y-análisis-de-hibridación-de-orbitales"><span class="toc-section-number">3.3</span>  Estructura de bandas y análisis de hibridación de orbitales</a></li>
+  <li><a href="#análisis-de-cargas" id="toc-análisis-de-cargas" class="nav-link active" data-scroll-target="#análisis-de-cargas">Análisis de cargas</a></li>
+  <li><a href="#orbitales-moleculares" id="toc-orbitales-moleculares" class="nav-link" data-scroll-target="#orbitales-moleculares">Orbitales moleculares</a></li>
+  <li><a href="#estructura-de-bandas-y-análisis-de-hibridación-de-orbitales" id="toc-estructura-de-bandas-y-análisis-de-hibridación-de-orbitales" class="nav-link" data-scroll-target="#estructura-de-bandas-y-análisis-de-hibridación-de-orbitales">Estructura de bandas y análisis de hibridación de orbitales</a></li>
   </ul>
 </nav>
     </div>
@@ -163,7 +183,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Teoría de los funcionales de la densidad (DFT)</span></h1>
+<h1 class="title d-none d-lg-block">Teoría de los funcionales de la densidad (DFT)</h1>
 </div>
 
 
@@ -178,20 +198,18 @@ div.csl-indent {
 </header>
 
 <p>La Teoría de los Funcionales de la Densidad (DFT, por sus siglas en inglés) trabaja sobre la premisa de que cualquier propiedad de un sistema de varias partículas que interactúan puede visualizarse como un funcional de la densidad del estado basal <span class="math inline">\(n_0(\textbf{r})\)</span> <span class="citation" data-cites="Martin2008-gc">(ver <a href="#ref-Martin2008-gc" role="doc-biblioref">Martin 2008</a>)</span>. A continuación, se presentan tres ejemplos del cálculo de propiedades de diferentes sistemas utilizando GPAW, una librería de Python basada en DFT, el método PAW y el ambiente de simulación atómica ASE <span class="citation" data-cites="GPAW_2023">(ver <a href="#ref-GPAW_2023" role="doc-biblioref">gpaw 2023</a>)</span>.</p>
-<section id="análisis-de-cargas" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="análisis-de-cargas"><span class="header-section-number">3.1</span> Análisis de cargas</h2>
+<section id="análisis-de-cargas" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-cargas">Análisis de cargas</h2>
 <p>Las cargas de Hirshfeld se definen respecto a a una deformación de la densidad electrónica. Bajo este esquema, para una descripción cuantitativa de la distribución de carga en moléculas o sólidos es conveniente dividir el sistema en fragmentos conformados por átomos, lo que resulta en un compartimento de la densidad y una fuerte localización de la carga entre ellos. Considerando las deformación de la densidad atómica (ssiendo esta una comparación entre átomos enlazados vs átomos libres) se definen cargas atómicas netas y momentos multipolo, siendo estos los elementos usados para definir la reorganización de la carga en toda la molécula. Esto permite calcular el potencial electroestático externo y la energía de interacción entre moléculas o partes de la misma molécula <span class="citation" data-cites="Hirshfeld1977">(ver <a href="#ref-Hirshfeld1977" role="doc-biblioref">Hirshfeld 1977</a>)</span>.</p>
 <p>A continuación, se muestra un ejemplo de código para el análisis de carga para la molécula de HCN en el esquema de Hirshfeld utilizando la librería GPAW.</p>
 <p></p>
 </section>
-<section id="orbitales-moleculares" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="orbitales-moleculares"><span class="header-section-number">3.2</span> Orbitales moleculares</h2>
+<section id="orbitales-moleculares" class="level2">
+<h2 class="anchored" data-anchor-id="orbitales-moleculares">Orbitales moleculares</h2>
 <p>Los orbitales moleculares son el producto de una combinación lineal de orbitales atómicos. Estos se obtienen mediante la adición o substracción de las ecuaciones</p>
-<p>notebook-view: - notebook: QuantChem_DFT-OM.ipynb title: “Orbitale moleculares” url: https://colab.research.google.com/drive/1ScEn-_JFap2G_YVkTGJeTCdOwuC3WVGy?usp=sharing</p>
 </section>
-<section id="estructura-de-bandas-y-análisis-de-hibridación-de-orbitales" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="estructura-de-bandas-y-análisis-de-hibridación-de-orbitales"><span class="header-section-number">3.3</span> Estructura de bandas y análisis de hibridación de orbitales</h2>
-<p>notebook-view: - notebook: QuantChem_DFT-EstBandyHib.ipynb title: “Estructura de bandas e hibridación de orbitales” url: https://colab.research.google.com/drive/19Ur1K-oclYn760U0xKHxotvf59xvMNbN?usp=sharing</p>
+<section id="estructura-de-bandas-y-análisis-de-hibridación-de-orbitales" class="level2">
+<h2 class="anchored" data-anchor-id="estructura-de-bandas-y-análisis-de-hibridación-de-orbitales">Estructura de bandas y análisis de hibridación de orbitales</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
@@ -308,13 +326,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./H-F.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Método de Hartree-Fock</span></span>
+      <a href="./H-F.ipynb" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./QuantChem_DFT_AnCarg.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis de cargas en HCN</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
